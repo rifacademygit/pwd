@@ -14,13 +14,13 @@
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-black-50 text-black-800">
 
     <!-- Header -->
     <header class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <h1 class="text-2xl md:text-3xl font-bold text-blue-800">Disability Inclusion for Financial Service Providers</h1>
-            <p class="text-gray-600 mt-1">An introductory e-course for building a more inclusive banking environment.</p>
+            <p class="text-black-600 mt-1">An introductory e-course for building a more inclusive banking environment.</p>
         </div>
         <!-- Progress Bar -->
         <div class="w-full bg-gray-200 h-2">
@@ -67,6 +67,207 @@
                 </div>
             </div>
         </section>
+
+        <section id="pre-quiz" class="mb-12">
+    <div class="flex items-center mb-6">
+        <div class="bg-yellow-500 text-white rounded-full h-12 w-12 flex items-center justify-center text-2xl font-bold">?</div>
+        <h2 class="text-3xl font-bold text-gray-900 ml-4">Pre-Course Knowledge Check</h2>
+    </div>
+    <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg lesson-card">
+        <p class="text-gray-600 mb-6">See what you already know! This pre-quiz is just for you and will not be graded.</p>
+        <form id="pre-quiz-form" class="space-y-8">
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">1. According to the Social Model of Disability, what is the primary cause of disability?</p>
+                <div class="space-y-3">
+                    <label for="pre-q1a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q1a" name="pre-q1" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">a. A person's medical condition or impairment.</span>
+                    </label>
+                    <label for="pre-q1b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q1b" name="pre-q1" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">b. The interaction between a person's impairment and societal barriers.</span>
+                    </label>
+                    <label for="pre-q1c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q1c" name="pre-q1" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">c. A lack of personal motivation.</span>
+                    </label>
+                </div>
+                <div class="feedback mt-2" id="pre-feedback-q1"></div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">2. True or False: All disabilities are visible.</p>
+                <div class="space-y-3">
+                    <label for="pre-q2a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q2a" name="pre-q2" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">a. True</span>
+                    </label>
+                    <label for="pre-q2b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q2b" name="pre-q2" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">b. False</span>
+                    </label>
+                </div>
+                <div class="feedback mt-2" id="pre-feedback-q2"></div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">3. A customer with anxiety asks for a quiet room to discuss a loan. This is an example of:</p>
+                <div class="space-y-3">
+                    <label for="pre-q3a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q3a" name="pre-q3" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">a. Special treatment.</span>
+                    </label>
+                    <label for="pre-q3b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q3b" name="pre-q3" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">b. A reasonable accommodation.</span>
+                    </label>
+                    <label for="pre-q3c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q3c" name="pre-q3" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">c. An unnecessary request.</span>
+                    </label>
+                </div>
+                <div class="feedback mt-2" id="pre-feedback-q3"></div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">4. Which of the following is considered a "Do" in respectful communication?</p>
+                <div class="space-y-3">
+                    <label for="pre-q4a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q4a" name="pre-q4" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">a. Speak only to the customer's companion.</span>
+                    </label>
+                    <label for="pre-q4b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q4b" name="pre-q4" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">b. Touch a person's wheelchair to help them move.</span>
+                    </label>
+                    <label for="pre-q4c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q4c" name="pre-q4" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">c. Ask "How can I help?" before providing assistance.</span>
+                    </label>
+                </div>
+                <div class="feedback mt-2" id="pre-feedback-q4"></div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">5. True or False: Making banking services accessible is primarily a charity issue, not a business opportunity.</p>
+                <div class="space-y-3">
+                    <label for="pre-q5a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q5a" name="pre-q5" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">a. True</span>
+                    </label>
+                    <label for="pre-q5b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q5b" name="pre-q5" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">b. False</span>
+                    </label>
+                </div>
+                <div class="feedback mt-2" id="pre-feedback-q5"></div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">6. An inaccessible website is an example of what kind of barrier?</p>
+                <div class="space-y-3">
+                    <label for="pre-q6a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q6a" name="pre-q6" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">a. A digital or systemic barrier.</span>
+                    </label>
+                    <label for="pre-q6b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q6b" name="pre-q6" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">b. An attitudinal barrier.</span>
+                    </label>
+                    <label for="pre-q6c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q6c" name="pre-q6" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">c. Only a problem for young people.</span>
+                    </label>
+                </div>
+                <div class="feedback mt-2" id="pre-feedback-q6"></div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">7. "WCAG" refers to guidelines for:</p>
+                <div class="space-y-3">
+                    <label for="pre-q7a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q7a" name="pre-q7" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">a. Building physical ramps.</span>
+                    </label>
+                    <label for="pre-q7b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q7b" name="pre-q7" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">b. Web content accessibility.</span>
+                    </label>
+                    <label for="pre-q7c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q7c" name="pre-q7" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">c. Staff training programs.</span>
+                    </label>
+                </div>
+                <div class="feedback mt-2" id="pre-feedback-q7"></div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">8. True or False: When a customer with a disability enters, you should immediately grab their arm to help them.</p>
+                <div class="space-y-3">
+                    <label for="pre-q8a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q8a" name="pre-q8" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">a. True</span>
+                    </label>
+                    <label for="pre-q8b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q8b" name="pre-q8" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">b. False</span>
+                    </label>
+                </div>
+                <div class="feedback mt-2" id="pre-feedback-q8"></div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">9. Providing a sign language interpreter for a Deaf customer is a form of:</p>
+                <div class="space-y-3">
+                    <label for="pre-q9a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q9a" name="pre-q9" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">a. Reasonable Accommodation.</span>
+                    </label>
+                    <label for="pre-q9b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q9b" name="pre-q9" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">b. A communication barrier.</span>
+                    </label>
+                    <label for="pre-q9c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q9c" name="pre-q9" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">c. An unnecessary expense.</span>
+                    </label>
+                </div>
+                <div class="feedback mt-2" id="pre-feedback-q9"></div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">10. The main goal of disability inclusion in banking is to:</p>
+                <div class="space-y-3">
+                    <label for="pre-q10a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q10a" name="pre-q10" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">a. Give people with disabilities special advantages.</span>
+                    </label>
+                    <label for="pre-q10b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q10b" name="pre-q10" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">b. Comply with the minimum legal requirements only.</span>
+                    </label>
+                    <label for="pre-q10c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="pre-q10c" name="pre-q10" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">c. Remove barriers so everyone can participate on an equal basis.</span>
+                    </label>
+                </div>
+                <div class="feedback mt-2" id="pre-feedback-q10"></div>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" id="pre-submit-quiz" class="bg-yellow-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-600 transition-colors">Check My Answers</button>
+            </div>
+        </form>
+        <div id="pre-quiz-results" class="hidden text-center mt-8">
+            <h3 class="text-2xl font-bold">Quiz Complete!</h3>
+            <p class="text-lg mt-2">Your score: <span id="pre-quiz-score" class="font-bold"></span></p>
+            <p id="pre-quiz-message" class="mt-4 text-gray-700"></p>
+        </div>
+    </div>
+</section>
+
+        
 
         <!-- Lesson 1: Understanding Disability & The Social Model -->
         <section id="lesson1" class="mb-12">
@@ -266,35 +467,36 @@
                  <h3 class="text-xl font-semibold text-gray-900 mb-2">A Voice from the Community</h3>
                 <p class="text-gray-600 mb-4">Hearing directly from customers builds empathy. Watch this short video to understand the real-world impact of barriers. It has English subtitle.</p>
     
-                 <div class="aspect-w-16 aspect-h-9">
-                <iframe width="853" height="480" src="https://www.youtube.com/embed/9XNcb_fJFIY" title="Rattana&#39;s story - building his business and sharing new skills" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 
+                <iframe width="1185" height="680" src="https://www.youtube.com/embed/9XNcb_fJFIY" title="Rattana&#39;s story - building his business and sharing new skills" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                     </div>
                 <!-- Scenario Block -->
-                <div class="bg-white p-6 rounded-xl shadow-lg lesson-card">
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">A Customer's Journey: Identifying the Barriers</h3>
-                    <p class="text-gray-600 mb-4">Let's follow a customer's journey to the bank. Click through the scenes to see what happens.</p>
-                    <div id="scenario-container" class="relative bg-gray-100 p-4 rounded-lg min-h-[400px] flex items-center justify-center">
-                        <!-- Scene 1 -->
-                        <div class="scenario-scene active text-center">
-                            <img src="./assets/images/scenario1.jpg" alt="Customer in wheelchair at bottom of stairs" class="mx-auto rounded-lg mb-4 shadow-md">
-                            <h4 class="font-bold text-lg mb-2">Scene 1: The Physical Barrier</h4>
-                            <p class="max-w-md mx-auto">A customer arrives but cannot enter the branch because of the stairs. This is a physical barrier that prevents access.</p>
-                        </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg lesson-card"> <h3 class="text-xl font-semibold text-gray-900 mb-2">A Customer's Journey: Identifying the Barriers</h3>
+                <p class="text-gray-600 mb-4">Let's follow a customer's journey to the bank. Click through the scenes to see what happens.</p>
+
+               
+                    </div>
+                            <div class="scenario-scene active text-center">
+                                <img src="./assets/images/scenario1.jpg" alt="Customer in wheelchair at bottom of stairs" class="mx-auto rounded-lg mb-4 shadow-md w-half h-96">
+                                <h4 class="font-bold text-lg mb-2">The Physical Barrier</h4>
+                                <p class="max-w-md mx-auto">A customer arrives but cannot enter the branch because of the stairs. This is a physical barrier that prevents access.</p>
+                            </div>
                         <!-- Scene 2 -->
                         <div class="scenario-scene text-center">
-                            <img src="/assets/images/scenario2.jpg" alt="Confused bank staff" class="mx-auto rounded-lg mb-4 shadow-md">
-                            <h4 class="font-bold text-lg mb-2">Scene 2: The Attitudinal Barrier</h4>
+                            <img src="/assets/images/scenario2.jpg" alt="Confused bank staff" class="mx-auto rounded-lg mb-4 shadow-md w-half h-96">
+                            <h4 class="font-bold text-lg mb-2">The Attitudinal Barrier</h4>
                             <p class="max-w-md mx-auto">Inside, the staff are unsure how to help and assume the customer cannot manage their own finances. This is an attitudinal barrier based on stigma.</p>
                         </div>
                         <!-- Scene 3 -->
                         <div class="scenario-scene text-center">
-                            <img src="/assets/images/scenario3.jpg" alt="Customer frustrated with inaccessible website" class="mx-auto rounded-lg mb-4 shadow-md">
-                            <h4 class="font-bold text-lg mb-2">Scene 3: The Systemic & Digital Barrier</h4>
+                            <img src="/assets/images/scenario3.jpg" alt="Customer frustrated with inaccessible website" class="mx-auto rounded-lg mb-4 shadow-md w-half h-96">
+                            <h4 class="font-bold text-lg mb-2">The Systemic & Digital Barrier</h4>
                             <p class="max-w-md mx-auto">The staff directs the customer to use an online platform that isn't accessible. This is a systemic failure in the bank's policies and technology.</p>
                         </div>
                          <!-- Scene 4 -->
                         <div class="scenario-scene text-center">
+                            <img src="./assets/images/conclusion.jpg" alt="Customer frustrated with inaccessible website" class="mx-auto rounded-lg mb-4 shadow-md w-half h-96">
                             <h4 class="font-bold text-lg mb-2">Conclusion</h4>
                             <p class="max-w-md mx-auto">This customer faced a chain of barriers that led to complete exclusion. Our goal as financial service providers is to identify and break this chain at every step.</p>
                         </div>
@@ -303,7 +505,10 @@
                         <button id="scenario-btn" class="bg-blue-600 text-white font-bold py-2 px-6 rounded-full hover:bg-blue-700 transition-colors">Next Scene</button>
                     </div>
                 </div>
+                <div>
 
+
+                </div>
                 <!-- Flashcard Grid -->
                 <div class="bg-white p-6 rounded-xl shadow-lg lesson-card">
                     <h3 class="text-xl font-semibold text-gray-900 mb-4">The Value of Inclusion: Why It's Good for Business</h3>
@@ -420,135 +625,211 @@
             </div>
         </section>
 
-        <!-- Knowledge Check Section -->
         <section id="knowledge-check" class="mb-12">
-            <div class="flex items-center mb-6">
-                <div class="bg-yellow-500 text-white rounded-full h-12 w-12 flex items-center justify-center text-2xl font-bold">?</div>
-                <h2 class="text-3xl font-bold text-gray-900 ml-4">Knowledge Check</h2>
-            </div>
-            <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg lesson-card">
-                <form id="quiz-form" class="space-y-8">
-                    <!-- Question 1 -->
-                    <div class="quiz-question">
-                        <p class="font-semibold text-lg mb-4">
-                            1. According to the Social Model of Disability, what is the primary cause of disability?
-                            <button type="button" class="tts-button" data-tts-target="#q1-text">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
-                            </button>
-                        </p>
-                        <div id="q1-text" class="space-y-2">
-                            <div class="quiz-option"><input type="radio" id="q1a" name="q1" value="a"><label for="q1a" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">A person's medical condition or impairment.</label></div>
-                            <div class="quiz-option"><input type="radio" id="q1b" name="q1" value="b"><label for="q1b" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">The interaction between a person's impairment and societal barriers.</label></div>
-                            <div class="quiz-option"><input type="radio" id="q1c" name="q1" value="c"><label for="q1c" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">A lack of personal motivation.</label></div>
-                        </div>
-                        <div class="feedback" id="feedback-q1"></div>
-                    </div>
-                    <!-- Question 2 -->
-                    <div class="quiz-question">
-                        <p class="font-semibold text-lg mb-4">2. True or False: All disabilities are visible.</p>
-                        <div class="space-y-2">
-                            <div class="quiz-option"><input type="radio" id="q2a" name="q2" value="a"><label for="q2a" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">True</label></div>
-                            <div class="quiz-option"><input type="radio" id="q2b" name="q2" value="b"><label for="q2b" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">False</label></div>
-                        </div>
-                         <div class="feedback" id="feedback-q2"></div>
-                    </div>
-                    <!-- Question 3 -->
-                     <div class="quiz-question">
-                        <p class="font-semibold text-lg mb-4">3. A customer with anxiety asks for a quiet room to discuss a loan. This is an example of:</p>
-                        <div class="space-y-2">
-                            <div class="quiz-option"><input type="radio" id="q3a" name="q3" value="a"><label for="q3a" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">Special treatment.</label></div>
-                            <div class="quiz-option"><input type="radio" id="q3b" name="q3" value="b"><label for="q3b" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">A reasonable accommodation.</label></div>
-                            <div class="quiz-option"><input type="radio" id="q3c" name="q3" value="c"><label for="q3c" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">An unnecessary request.</label></div>
-                        </div>
-                        <div class="feedback" id="feedback-q3"></div>
-                    </div>
-                     <!-- Question 4 -->
-                    <div class="quiz-question">
-                        <p class="font-semibold text-lg mb-4">4. Which of the following is considered a "Do" in respectful communication?</p>
-                        <div class="space-y-2">
-                            <div class="quiz-option"><input type="radio" id="q4a" name="q4" value="a"><label for="q4a" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">Speak only to the customer's companion.</label></div>
-                            <div class="quiz-option"><input type="radio" id="q4b" name="q4" value="b"><label for="q4b" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">Touch a person's wheelchair to help them move.</label></div>
-                            <div class="quiz-option"><input type="radio" id="q4c" name="q4" value="c"><label for="q4c" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">Ask "How can I help?" before providing assistance.</label></div>
-                        </div>
-                        <div class="feedback" id="feedback-q4"></div>
-                    </div>
-                    <!-- Question 5 -->
-                    <div class="quiz-question">
-                        <p class="font-semibold text-lg mb-4">5. True or False: Making banking services accessible is primarily a charity issue, not a business opportunity.</p>
-                         <div class="space-y-2">
-                            <div class="quiz-option"><input type="radio" id="q5a" name="q5" value="a"><label for="q5a" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">True</label></div>
-                            <div class="quiz-option"><input type="radio" id="q5b" name="q5" value="b"><label for="q5b" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">False</label></div>
-                        </div>
-                        <div class="feedback" id="feedback-q5"></div>
-                    </div>
-                    <!-- Question 6 -->
-                    <div class="quiz-question">
-                        <p class="font-semibold text-lg mb-4">6. An inaccessible website is an example of what kind of barrier?</p>
-                        <div class="space-y-2">
-                            <div class="quiz-option"><input type="radio" id="q6a" name="q6" value="a"><label for="q6a" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">A digital or systemic barrier.</label></div>
-                            <div class="quiz-option"><input type="radio" id="q6b" name="q6" value="b"><label for="q6b" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">An attitudinal barrier.</label></div>
-                            <div class="quiz-option"><input type="radio" id="q6c" name="q6" value="c"><label for="q6c" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">Only a problem for young people.</label></div>
-                        </div>
-                        <div class="feedback" id="feedback-q6"></div>
-                    </div>
-                    <!-- Question 7 -->
-                    <div class="quiz-question">
-                        <p class="font-semibold text-lg mb-4">7. "WCAG" refers to guidelines for:</p>
-                        <div class="space-y-2">
-                            <div class="quiz-option"><input type="radio" id="q7a" name="q7" value="a"><label for="q7a" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">Building physical ramps.</label></div>
-                            <div class="quiz-option"><input type="radio" id="q7b" name="q7" value="b"><label for="q7b" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">Web content accessibility.</label></div>
-                            <div class="quiz-option"><input type="radio" id="q7c" name="q7" value="c"><label for="q7c" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">Staff training programs.</label></div>
-                        </div>
-                        <div class="feedback" id="feedback-q7"></div>
-                    </div>
-                    <!-- Question 8 -->
-                    <div class="quiz-question">
-                        <p class="font-semibold text-lg mb-4">8. True or False: When a customer with a disability enters, you should immediately grab their arm to help them.</p>
-                         <div class="space-y-2">
-                            <div class="quiz-option"><input type="radio" id="q8a" name="q8" value="a"><label for="q8a" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">True</label></div>
-                            <div class="quiz-option"><input type="radio" id="q8b" name="q8" value="b"><label for="q8b" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">False</label></div>
-                        </div>
-                        <div class="feedback" id="feedback-q8"></div>
-                    </div>
-                    <!-- Question 9 -->
-                    <div class="quiz-question">
-                        <p class="font-semibold text-lg mb-4">9. Providing a sign language interpreter for a Deaf customer is a form of:</p>
-                        <div class="space-y-2">
-                            <div class="quiz-option"><input type="radio" id="q9a" name="q9" value="a"><label for="q9a" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">Reasonable Accommodation.</label></div>
-                            <div class="quiz-option"><input type="radio" id="q9b" name="q9" value="b"><label for="q9b" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">A communication barrier.</label></div>
-                            <div class="quiz-option"><input type="radio" id="q9c" name="q9" value="c"><label for="q9c" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">An unnecessary expense.</label></div>
-                        </div>
-                        <div class="feedback" id="feedback-q9"></div>
-                    </div>
-                    <!-- Question 10 -->
-                    <div class="quiz-question">
-                        <p class="font-semibold text-lg mb-4">10. The main goal of disability inclusion in banking is to:</p>
-                        <div class="space-y-2">
-                            <div class="quiz-option"><input type="radio" id="q10a" name="q10" value="a"><label for="q10a" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">Give people with disabilities special advantages.</label></div>
-                            <div class="quiz-option"><input type="radio" id="q10b" name="q10" value="b"><label for="q10b" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">Comply with the minimum legal requirements only.</label></div>
-                            <div class="quiz-option"><input type="radio" id="q10c" name="q10" value="c"><label for="q10c" class="flex items-center border border-gray-300 rounded-lg p-3 cursor-pointer">Remove barriers so everyone can participate on an equal basis.</label></div>
-                        </div>
-                        <div class="feedback" id="feedback-q10"></div>
-                    </div>
-                    
-                    <div class="text-center">
-                        <button type="submit" id="submit-quiz" class="bg-yellow-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-600 transition-colors">Check My Answers</button>
-                    </div>
-                </form>
-                <div id="quiz-results" class="hidden text-center mt-8">
-                    <h3 class="text-2xl font-bold">Quiz Complete!</h3>
-                    <p class="text-lg mt-2">Your score: <span id="quiz-score" class="font-bold"></span></p>
-                    <p id="quiz-message" class="mt-4 text-gray-700"></p>
-                    <div id="certificate-section" class="hidden mt-6">
-                        <p class="text-green-700 font-semibold">Congratulations! You've earned a certificate.</p>
-                        <button id="download-cert-btn" class="mt-2 bg-green-600 text-white font-bold py-2 px-6 rounded-full hover:bg-green-700 transition-colors">
-                            Download Certificate
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <div class="flex items-center mb-6">
+        <div class="bg-yellow-500 text-white rounded-full h-12 w-12 flex items-center justify-center text-2xl font-bold">?</div>
+        <h2 class="text-3xl font-bold text-gray-900 ml-4">Knowledge Check</h2>
+    </div>
+    <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg lesson-card">
+        <form id="quiz-form" class="space-y-8">
 
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">1. According to the Social Model of Disability, what is the primary cause of disability?</p>
+                <div class="space-y-3">
+                    <label for="q1a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="q1a" name="q1" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">a. A person's medical condition or impairment.</span>
+                    </label>
+                    <label for="q1b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="q1b" name="q1" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">b. The interaction between a person's impairment and societal barriers.</span>
+                    </label>
+                    <label for="q1c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="q1c" name="q1" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">c. A lack of personal motivation.</span>
+                    </label>
+                </div>
+                <div class="feedback mt-2" id="feedback-q1"></div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">2. True or False: All disabilities are visible.</p>
+                <div class="space-y-3">
+                    <label for="q2a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="q2a" name="q2" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">a. True</span>
+                    </label>
+                    <label for="q2b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                        <input type="radio" id="q2b" name="q2" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                        <span class="ml-3 text-gray-700">b. False</span>
+                    </label>
+                </div>
+                <div class="feedback mt-2" id="feedback-q2"></div>
+            </div>
+
+            <div class="quiz-question">
+                 <p class="font-semibold text-lg mb-4">3. A customer with anxiety asks for a quiet room to discuss a loan. This is an example of:</p>
+                 <div class="space-y-3">
+                     <label for="q3a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q3a" name="q3" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">a. Special treatment.</span>
+                     </label>
+                     <label for="q3b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q3b" name="q3" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">b. A reasonable accommodation.</span>
+                     </label>
+                     <label for="q3c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q3c" name="q3" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">c. An unnecessary request.</span>
+                     </label>
+                 </div>
+                 <div class="feedback mt-2" id="feedback-q3"></div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">4. Which of the following is considered a "Do" in respectful communication?</p>
+                <div class="space-y-3">
+                     <label for="q4a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q4a" name="q4" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">a. Speak only to the customer's companion.</span>
+                     </label>
+                     <label for="q4b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q4b" name="q4" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">b. Touch a person's wheelchair to help them move.</span>
+                     </label>
+                     <label for="q4c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q4c" name="q4" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">c. Ask "How can I help?" before providing assistance.</span>
+                     </label>
+                 </div>
+                 <div class="feedback mt-2" id="feedback-q4"></div>
+            </div>
+
+            <div class="quiz-question">
+                 <p class="font-semibold text-lg mb-4">5. True or False: Making banking services accessible is primarily a charity issue, not a business opportunity.</p>
+                 <div class="space-y-3">
+                     <label for="q5a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q5a" name="q5" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">a. True</span>
+                     </label>
+                     <label for="q5b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q5b" name="q5" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">b. False</span>
+                     </label>
+                 </div>
+                 <div class="feedback mt-2" id="feedback-q5"></div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">6. An inaccessible website is an example of what kind of barrier?</p>
+                 <div class="space-y-3">
+                     <label for="q6a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q6a" name="q6" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">a. A digital or systemic barrier.</span>
+                     </label>
+                     <label for="q6b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q6b" name="q6" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">b. An attitudinal barrier.</span>
+                     </label>
+                     <label for="q6c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q6c" name="q6" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">c. Only a problem for young people.</span>
+                     </label>
+                 </div>
+                 <div class="feedback mt-2" id="feedback-q6"></div>
+            </div>
+
+            <div class="quiz-question">
+                 <p class="font-semibold text-lg mb-4">7. "WCAG" refers to guidelines for:</p>
+                 <div class="space-y-3">
+                     <label for="q7a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q7a" name="q7" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">a. Building physical ramps.</span>
+                     </label>
+                     <label for="q7b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q7b" name="q7" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">b. Web content accessibility.</span>
+                     </label>
+                     <label for="q7c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q7c" name="q7" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">c. Staff training programs.</span>
+                     </label>
+                 </div>
+                 <div class="feedback mt-2" id="feedback-q7"></div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">8. True or False: When a customer with a disability enters, you should immediately grab their arm to help them.</p>
+                <div class="space-y-3">
+                     <label for="q8a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q8a" name="q8" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">a. True</span>
+                     </label>
+                     <label for="q8b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q8b" name="q8" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">b. False</span>
+                     </label>
+                 </div>
+                 <div class="feedback mt-2" id="feedback-q8"></div>
+            </div>
+
+            <div class="quiz-question">
+                 <p class="font-semibold text-lg mb-4">9. Providing a sign language interpreter for a Deaf customer is a form of:</p>
+                 <div class="space-y-3">
+                     <label for="q9a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q9a" name="q9" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">a. Reasonable Accommodation.</span>
+                     </label>
+                     <label for="q9b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q9b" name="q9" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">b. A communication barrier.</span>
+                     </label>
+                     <label for="q9c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q9c" name="q9" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">c. An unnecessary expense.</span>
+                     </label>
+                 </div>
+                 <div class="feedback mt-2" id="feedback-q9"></div>
+            </div>
+
+            <div class="quiz-question">
+                <p class="font-semibold text-lg mb-4">10. The main goal of disability inclusion in banking is to:</p>
+                <div class="space-y-3">
+                     <label for="q10a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q10a" name="q10" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">a. Give people with disabilities special advantages.</span>
+                     </label>
+                     <label for="q10b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q10b" name="q10" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">b. Comply with the minimum legal requirements only.</span>
+                     </label>
+                     <label for="q10c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                         <input type="radio" id="q10c" name="q10" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                         <span class="ml-3 text-gray-700">c. Remove barriers so everyone can participate on an equal basis.</span>
+                     </label>
+                 </div>
+                 <div class="feedback mt-2" id="feedback-q10"></div>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" id="submit-quiz" class="bg-yellow-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-600 transition-colors">Check My Answers</button>
+            </div>
+        </form>
+        <div id="quiz-results" class="hidden text-center mt-8">
+            <h3 class="text-2xl font-bold">Quiz Complete!</h3>
+            <p class="text-lg mt-2">Your score: <span id="quiz-score" class="font-bold"></span></p>
+            <p id="quiz-message" class="mt-4 text-gray-700"></p>
+            <div id="certificate-section" class="hidden mt-6">
+                <p class="text-green-700 font-semibold">Congratulations! You've earned a certificate.</p>
+                <button id="download-cert-btn" class="mt-2 bg-green-600 text-white font-bold py-2 px-6 rounded-full hover:bg-green-700 transition-colors">
+                    Download Certificate
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
         <!-- Course Completion -->
         <section id="conclusion" class="text-center">
             <h2 class="text-3xl font-bold text-gray-900">Congratulations!</h2>

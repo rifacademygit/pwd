@@ -1,5 +1,10 @@
+/*
+  This :root block is essential. It defines a CSS variable '--font-size'
+  that the JavaScript can change. The html rule then applies this variable
+  to the root font size of the entire document, making all rem units scale accordingly.
+*/
 :root {
-    --font-size: 1rem;
+    --font-size: 1.5rem;
 }
 
 html {
@@ -10,6 +15,7 @@ body {
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
     transition: background-color 0.3s, color 0.3s;
+    font-size: large;
 }
 
 .lesson-card, .modal-content {
@@ -28,8 +34,9 @@ body {
 }
 
 .accordion-content.active {
-    max-height: 500px; /* Adjust as needed */
+    max-height: 300px; /* Adjust as needed */
     padding: 1.5rem;
+    
 }
 
 .accordion-button.active svg {
@@ -53,15 +60,15 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .flashcard-back {
     transform: rotateY(180deg);
 }
 
-.scenario-scene { display: none; }
+.scenario-scene { display:none; }
 .scenario-scene.active { display: block; }
 .progress-bar-fill { transition: width 0.5s ease-in-out; }
 
@@ -120,25 +127,12 @@ body {
     transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.quiz-option input:checked + label {
-    background-color: #dbeafe; /* blue-100 */
-    border-color: #3b82f6; /* blue-500 */
-    font-weight: 600;
-}
-
-.quiz-option input:checked + label:after {
-    content: '✔';
-    color: #2563eb;
-    font-weight: bold;
-    margin-left: auto;
-    padding-left: 1rem;
-}
-
 .feedback {
     display: none;
     margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1rem;
     border-radius: 0.5rem;
+    font-weight: 500;
 }
 
 .feedback.correct {
@@ -157,27 +151,22 @@ body.theme-dark {
     color: #d1d5db;
 }
 
+
 .theme-dark header, .theme-dark .lesson-card, .theme-dark .modal-content {
     background-color: #1f2937;
     color: #d1d5db;
 }
 
-.theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4 {
+.theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark .font-bold {
     color: #f9fafb;
 }
 
-.theme-dark p, .theme-dark cite, .theme-dark .accordion-content, .theme-dark .quiz-option label {
+.theme-dark p, .theme-dark cite, .theme-dark .accordion-content, .theme-dark .quiz-option .ml-3 {
     color: #9ca3af;
 }
 
-.theme-dark .quiz-option input:checked + label {
+.theme-dark .has-[:checked]:bg-blue-50 {
     background-color: #374151;
-    border-color: #60a5fa;
-    color: #f9fafb;
-}
-
-.theme-dark .quiz-option input:checked + label:after {
-    color: #60a5fa;
 }
 
 .theme-dark .animation-container { background-color: #374151; }
@@ -192,21 +181,16 @@ body.theme-light-yellow {
     background-color: #fef9c3;
 }
 
-.theme-light-yellow h1, .theme-light-yellow h2, .theme-light-yellow h3, .theme-light-yellow h4 {
+.theme-light-yellow h1, .theme-light-yellow h2, .theme-light-yellow h3, .theme-light-yellow h4, .theme-light-yellow .font-bold {
     color: #713f12;
 }
 
-.theme-light-yellow p, .theme-light-yellow cite, .theme-light-yellow .accordion-content, .theme-light-yellow .quiz-option label {
+.theme-light-yellow p, .theme-light-yellow cite, .theme-light-yellow .accordion-content, .theme-light-yellow .quiz-option .ml-3 {
     color: #52525b;
 }
 
-.theme-light-yellow .quiz-option input:checked + label {
+.theme-light-yellow .has-[:checked]:bg-blue-50 {
     background-color: #fde68a;
-    border-color: #f59e0b;
-}
-
-.theme-light-yellow .quiz-option input:checked + label:after {
-    color: #b45309;
 }
 
 .theme-light-yellow .animation-container { background-color: #fef9c3; }
@@ -235,4 +219,14 @@ body.theme-light-yellow {
 
 .tts-button.speaking svg {
     color: #ef4444;
+}
+
+/* Add a highly visible focus ring for keyboard users */
+button:focus-visible,
+a:focus-visible,
+input[type="radio"]:focus-visible + label,
+[tabindex="0"]:focus-visible {
+    outline: 3px solid #3b82f6; /* A solid blue outline */
+    outline-offset: 2px;
+    border-radius: 4px; /* Optional: makes the outline rounded */
 }
