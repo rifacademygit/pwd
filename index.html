@@ -48,7 +48,7 @@ body {
 }
 
 .accordion-content.active {
-    max-height: 1000px; /* Adjust as needed */
+    max-height: 500px; /* Adjust as needed */
     padding: 1.5rem;
 }
 
@@ -77,10 +77,9 @@ body {
     backface-visibility: hidden;
     border-radius: 0.5rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -165,10 +164,7 @@ body {
     color: #991b1b;
 }
 
-
-/* --- THEME STYLES --- */
-
-/* Dark Theme */
+/* Theme Styles */
 body.theme-dark {
     background-color: #111827;
     color: #d1d5db;
@@ -177,157 +173,53 @@ body.theme-dark {
 .theme-dark header, .theme-dark .lesson-card, .theme-dark .modal-content, .theme-dark .bg-white {
     background-color: #1f2937;
     color: #d1d5db;
-    border-color: #4b5563;
 }
 
-.theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark .font-bold, .theme-dark .text-gray-900, .theme-dark .text-blue-800 {
+.theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark .font-bold, .theme-dark .text-gray-900 {
     color: #f9fafb;
 }
 
-.theme-dark p, .theme-dark cite, .theme-dark li, .theme-dark .accordion-content, .theme-dark .quiz-option .ml-3, .theme-dark .text-gray-700, .theme-dark .text-gray-600 {
+.theme-dark p, .theme-dark cite, .theme-dark .accordion-content, .theme-dark .quiz-option .ml-3, .theme-dark .text-gray-700, .theme-dark .text-gray-600 {
     color: #9ca3af;
 }
-.theme-dark .accordion-button {
-    color: #f9fafb;
-}
 
-.theme-dark .animation-container, .theme-dark .bg-gray-100 { background-color: #374151; }
-.theme-dark blockquote { background-color: #374151; border-color: #3b82f6; }
-.theme-dark .divide-y > :not([hidden]) ~ :not([hidden]) { border-color: #4b5563; }
-
-.theme-dark .bg-blue-100 { background-color: #1e3a8a; }
-.theme-dark .bg-blue-100 p { color: #dbeafe; }
-.theme-dark .bg-green-100 { background-color: #14532d; }
-.theme-dark .text-green-800, .theme-dark .text-green-700 { color: #bbf7d0; }
-.theme-dark .feedback.correct { background-color: #14532d; color: #bbf7d0; }
-.theme-dark .bg-red-100 { background-color: #7f1d1d; }
-.theme-dark .text-red-800, .theme-dark .text-red-700 { color: #fecaca; }
-.theme-dark .feedback.incorrect { background-color: #7f1d1d; color: #fecaca; }
-.theme-dark .accordion-content.bg-gray-50 { background-color: #1f2937; }
-.theme-dark .modal-button { background-color: #1e40af; color: #e0e7ff; }
-.theme-dark .modal-close-btn { background-color: #4b5563; color: #f9fafb; }
-.theme-dark #learner-name { background-color: #374151; border-color: #4b5563; color: #d1d5db; }
-
-
-.theme-dark .flashcard-face.bg-blue-500 { background-color: #1e40af; }
-.theme-dark .flashcard-back.bg-blue-700 { background-color: #1d4ed8; }
-.theme-dark .flashcard-face.bg-green-500 { background-color: #166534; }
-.theme-dark .flashcard-back.bg-green-700, .theme-dark .flashcard-back.bg-green-600 { background-color: #15803d; }
-.theme-dark .flashcard-face.bg-purple-500 { background-color: #5b21b6; }
-.theme-dark .flashcard-back.bg-purple-700 { background-color: #6d28d9; }
-.theme-dark .flashcard-face.bg-yellow-500 { background-color: #854d0e; }
-.theme-dark .flashcard-back.bg-yellow-700 { background-color: #a16207; }
-.theme-dark .flashcard-face.bg-gray-700 { background-color: #374151; }
-
-/* FIX for disability type cards in dark theme */
-.theme-dark .bg-gray-50 {
+.theme-dark input:checked + .bg-blue-50 {
     background-color: #374151;
-    border-color: #4b5563;
-}
-.theme-dark .text-gray-800 {
-    color: #f9fafb;
 }
 
+.theme-dark .animation-container { background-color: #374151; }
+.theme-dark blockquote { background-color: #374151; border-color: #3b82f6; }
 
-/* High Contrast Theme */
 body.theme-high-contrast {
     background-color: #000000;
     color: #ffffff;
 }
 
-/* General Containers & Borders */
-.theme-high-contrast header, 
-.theme-high-contrast .lesson-card, 
-.theme-high-contrast .modal-content, 
-.theme-high-contrast .bg-white {
+.theme-high-contrast header, .theme-high-contrast .lesson-card, .theme-high-contrast .modal-content, .theme-high-contrast .bg-white {
     background-color: #000000;
     border: 2px solid #ffff00;
     color: #ffffff;
 }
 
-/* Headings & Bold Text */
-.theme-high-contrast h1, .theme-high-contrast h2, .theme-high-contrast h3, .theme-high-contrast h4, .theme-high-contrast .font-bold, .theme-high-contrast .text-gray-900, .theme-high-contrast .text-blue-800, .theme-high-contrast .text-blue-800 {
+.theme-high-contrast h1, .theme-high-contrast h2, .theme-high-contrast h3, .theme-high-contrast h4, .theme-high-contrast .font-bold, .theme-high-contrast .text-gray-900 {
     color: #ffff00;
 }
 
-/* Paragraphs, Lists, and other text elements */
-.theme-high-contrast p, .theme-high-contrast cite, .theme-high-contrast li, .theme-high-contrast em,
-.theme-high-contrast .accordion-content, 
-.theme-high-contrast .quiz-option .ml-3, 
-.theme-high-contrast .text-gray-800, .theme-high-contrast .text-gray-700, .theme-high-contrast .text-gray-600 {
+.theme-high-contrast p, .theme-high-contrast cite, .theme-high-contrast .accordion-content, .theme-high-contrast .quiz-option .ml-3, .theme-high-contrast .text-gray-700, .theme-high-contrast .text-gray-600 {
     color: #ffffff;
 }
 
-/* Buttons */
-.theme-high-contrast .nav-btn, 
-.theme-high-contrast .modal-button, 
-.theme-high-contrast #pre-submit-quiz, 
-.theme-high-contrast #submit-quiz,
-.theme-high-contrast #download-cert-btn,
-.theme-high-contrast #animate-btn,
-.theme-high-contrast #remove-barrier-btn,
-.theme-high-contrast #reset-animation-btn,
-.theme-high-contrast #scenario-btn,
-.theme-high-contrast .modal-close-btn,
-#retry-quiz-btn {
+.theme-high-contrast input:checked + .bg-blue-50 {
+    background-color: #0000ff;
+}
+.theme-high-contrast .nav-btn, .theme-high-contrast .modal-button, .theme-high-contrast #pre-submit-quiz, .theme-high-contrast #submit-quiz {
     background-color: #0000ff;
     color: #ffffff;
     border: 2px solid #ffff00;
 }
-.theme-high-contrast #font-decrease, .theme-high-contrast #font-increase {
-    background-color: #000;
-    color: #fff;
-    border: 2px solid #ffff00;
-}
-.theme-high-contrast #theme-normal, .theme-high-contrast #theme-dark, .theme-high-contrast #theme-high-contrast {
-    background-color: #000;
-    color: #fff;
-    border: 2px solid #ffff00;
-}
-.theme-high-contrast button.bg-blue-500 { /* Active theme button */
-    background-color: #0000ff !important;
-}
 
-/* Interactive Elements */
 .theme-high-contrast .animation-container { background-color: #333; }
 .theme-high-contrast blockquote { background-color: #222; border-color: #ffff00; }
-.theme-high-contrast .progress-bar-fill { background-color: #ffff00; }
-.theme-high-contrast .w-full.bg-gray-200 { background-color: #333; }
-.theme-high-contrast .tts-button svg { color: #ffff00; }
-.theme-high-contrast .navigation-controls { border-color: #ffff00; }
-.theme-high-contrast .bg-blue-100 {
-    background-color: #000;
-    border: 2px solid #ffff00;
-}
-.theme-high-contrast .bg-blue-100 p {
-    color: #ffffff;
-}
-
-/* Accordion */
-.theme-high-contrast .accordion-button { color: #ffffff; }
-.theme-high-contrast #accordion-container, .theme-high-contrast .border { border-color: #ffff00; }
-.theme-high-contrast .divide-y > :not([hidden]) ~ :not([hidden]) { border-color: #ffff00; }
-.theme-high-contrast .accordion-content.bg-gray-50 {
-    background-color: #000000;
-}
-
-/* Do / Don't Icons */
-.theme-high-contrast .bg-green-100 { background-color: #000; }
-.theme-high-contrast .text-green-700, .theme-high-contrast .text-green-800 { color: #00ff00; }
-.theme-high-contrast .feedback.correct { background-color: #000; color: #00ff00; border: 1px solid #00ff00;}
-.theme-high-contrast .bg-red-100 { background-color: #000; }
-.theme-high-contrast .text-red-700, .theme-high-contrast .text-red-800 { color: #ff0000; }
-.theme-high-contrast .feedback.incorrect { background-color: #000; color: #ff0000; border: 1px solid #ff0000;}
-.theme-high-contrast #learner-name { background-color: #000; border-color: #ffff00; color: #fff; }
-
-/* FIX for disability type cards in high contrast theme */
-.theme-high-contrast .bg-gray-50 {
-    background-color: #000000;
-    border-color: #ffff00;
-}
-.theme-high-contrast .text-gray-800 {
-    color: #ffff00;
-}
 
 
 /* TTS Button */
@@ -381,26 +273,12 @@ input[type="radio"]:focus-visible + label,
 }
 
 .navigation-controls {
-    position: sticky;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 1rem;
-    border-top: 1px solid #e5e7eb;
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e5e7eb;
 }
-
-body.theme-dark .navigation-controls {
-    background-color: rgba(31, 41, 55, 0.9);
-    border-color: #4b5563;
-}
-
-body.theme-high-contrast .navigation-controls {
-    background-color: rgba(0, 0, 0, 0.9);
-    border-color: #ffff00;
-}
-
 
 .nav-btn {
     background-color: #3b82f6;
@@ -445,8 +323,8 @@ body.theme-high-contrast .navigation-controls {
                 <div class="flex items-center gap-4">
                     <h3 class="font-semibold text-lg">Settings:</h3>
                     <div class="flex items-center gap-2">
-                        <button id="font-decrease" aria-label="Decrease font size" class="bg-gray-200 rounded-full w-8 h-8 font-bold text-lg">-A</button>
-                        <button id="font-increase" aria-label="Increase font size" class="bg-gray-200 rounded-full w-8 h-8 font-bold text-lg">+A</button>
+                        <button id="font-decrease" class="bg-gray-200 rounded-full w-8 h-8 font-bold text-lg">-A</button>
+                        <button id="font-increase" class="bg-gray-200 rounded-full w-8 h-8 font-bold text-lg">+A</button>
                     </div>
                 </div>
                 <div class="flex items-center gap-2">
@@ -458,27 +336,27 @@ body.theme-high-contrast .navigation-controls {
             </div>
         </section>
 
-        <!-- Screen 0: Welcome -->
+        <!-- Screen 1: Welcome -->
         <div id="screen-0" class="screen active">
             <section id="intro" class="bg-white p-6 md:p-8 rounded-xl shadow-lg mb-12 lesson-card">
                 <div class="flex flex-col md:flex-row items-center gap-8">
                     <div class="md:w-2/3">
                         <h2 class="text-2xl font-bold text-gray-900 mb-4">
                             Welcome!
-                            <button class="tts-button" aria-label="Listen to welcome text" data-tts-target="#intro-text">
+                            <button class="tts-button" data-tts-target="#intro-text">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
                             </button>
                         </h2>
-                        <p id="intro-text" class="text-lg text-gray-700">This course is designed to provide you with the foundational knowledge and skills to serve all customers, including those with disabilities, respectfully and effectively. By the end of this course, you will understand the importance of disability inclusion and learn best practices for creating a welcoming banking environment for everyone in your country and beyond. You can also listen to this course as an audio ebook in the last session of this module.</p>
+                        <p id="intro-text" class="text-lg text-gray-700">This course is designed to provide you with the foundational knowledge and skills to serve all customers, including those with disabilities, respectfully and effectively. By the end of this course, you will understand the importance of disability inclusion and learn best practices for creating a welcoming banking environment for everyone in your country and beyond.</p>
                     </div>
                     <div class="md:w-1/3">
-                        <img src="./resources/welcome.jpg" alt="A welcoming image showing diverse bank employees" class="rounded-lg shadow-md w-full">
+                        <img src="./images/welcome.jpg" alt="A welcoming image showing diverse bank employees" class="rounded-lg shadow-md w-full">
                     </div>
                 </div>
             </section>
         </div>
 
-        <!-- Screen 1: Pre-Course Knowledge Check -->
+        <!-- Screen 2: Pre-Course Knowledge Check -->
         <div id="screen-1" class="screen">
             <section id="pre-quiz" class="mb-12">
                 <div class="flex items-center mb-6">
@@ -488,7 +366,7 @@ body.theme-high-contrast .navigation-controls {
                 <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg lesson-card">
                     <p class="text-gray-600 mb-6">See what you already know! This pre-quiz is just for you and will not be graded. You must complete it to proceed.</p>
                     <form id="pre-quiz-form" class="space-y-8">
-                        <!-- Question 1 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">1. According to the Social Model of Disability, what is the primary cause of disability?</p>
                             <div class="space-y-3">
@@ -507,7 +385,7 @@ body.theme-high-contrast .navigation-controls {
                             </div>
                             <div class="feedback mt-2" id="pre-feedback-pre-q1"></div>
                         </div>
-                        <!-- Question 2 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">2. True or False: All disabilities are visible.</p>
                             <div class="space-y-3">
@@ -522,7 +400,7 @@ body.theme-high-contrast .navigation-controls {
                             </div>
                             <div class="feedback mt-2" id="pre-feedback-pre-q2"></div>
                         </div>
-                        <!-- Question 3 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">3. A customer with anxiety asks for a quiet room to discuss a loan. This is an example of:</p>
                             <div class="space-y-3">
@@ -541,7 +419,7 @@ body.theme-high-contrast .navigation-controls {
                             </div>
                             <div class="feedback mt-2" id="pre-feedback-pre-q3"></div>
                         </div>
-                        <!-- Question 4 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">4. Which of the following is considered a "Do" in respectful communication?</p>
                             <div class="space-y-3">
@@ -560,7 +438,7 @@ body.theme-high-contrast .navigation-controls {
                             </div>
                             <div class="feedback mt-2" id="pre-feedback-pre-q4"></div>
                         </div>
-                        <!-- Question 5 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">5. True or False: Making banking services accessible is primarily a charity issue, not a business opportunity.</p>
                             <div class="space-y-3">
@@ -575,7 +453,7 @@ body.theme-high-contrast .navigation-controls {
                             </div>
                             <div class="feedback mt-2" id="pre-feedback-pre-q5"></div>
                         </div>
-                        <!-- Question 6 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">6. An inaccessible website is an example of what kind of barrier?</p>
                             <div class="space-y-3">
@@ -594,7 +472,7 @@ body.theme-high-contrast .navigation-controls {
                             </div>
                             <div class="feedback mt-2" id="pre-feedback-pre-q6"></div>
                         </div>
-                        <!-- Question 7 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">7. "WCAG" refers to guidelines for:</p>
                             <div class="space-y-3">
@@ -613,7 +491,7 @@ body.theme-high-contrast .navigation-controls {
                             </div>
                             <div class="feedback mt-2" id="pre-feedback-pre-q7"></div>
                         </div>
-                        <!-- Question 8 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">8. True or False: When a customer with a disability enters, you should immediately grab their arm to help them.</p>
                             <div class="space-y-3">
@@ -628,7 +506,7 @@ body.theme-high-contrast .navigation-controls {
                             </div>
                             <div class="feedback mt-2" id="pre-feedback-pre-q8"></div>
                         </div>
-                        <!-- Question 9 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">9. Providing a sign language interpreter for a Deaf customer is a form of:</p>
                             <div class="space-y-3">
@@ -647,7 +525,7 @@ body.theme-high-contrast .navigation-controls {
                             </div>
                             <div class="feedback mt-2" id="pre-feedback-pre-q9"></div>
                         </div>
-                        <!-- Question 10 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">10. The main goal of disability inclusion in banking is to:</p>
                             <div class="space-y-3">
@@ -666,7 +544,8 @@ body.theme-high-contrast .navigation-controls {
                             </div>
                             <div class="feedback mt-2" id="pre-feedback-pre-q10"></div>
                         </div>
-                         <div class="text-center">
+
+                        <div class="text-center">
                             <button type="submit" id="pre-submit-quiz" class="bg-yellow-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-600 transition-colors">Check My Answers</button>
                         </div>
                     </form>
@@ -679,7 +558,7 @@ body.theme-high-contrast .navigation-controls {
             </section>
         </div>
 
-        <!-- Screen 2: Understanding Disability & The Social Model -->
+        <!-- Screen 3: Understanding Disability & The Social Model -->
         <div id="screen-2" class="screen">
             <section id="lesson1" class="mb-12">
                 <div class="flex items-center mb-6">
@@ -693,7 +572,7 @@ body.theme-high-contrast .navigation-controls {
                              <div class="md:w-2/3">
                                 <h3 class="text-xl font-semibold text-gray-900 mb-3">
                                     What is Disability?
-                                    <button class="tts-button" aria-label="Listen to disability definition" data-tts-target="#uncrpd-definition">
+                                    <button class="tts-button" data-tts-target="#uncrpd-definition">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
                                     </button>
                                 </h3>
@@ -703,7 +582,7 @@ body.theme-high-contrast .navigation-controls {
                                 </blockquote>
                             </div>
                             <div class="md:w-1/3 mt-4 md:mt-0">
-                                 <img src="./resources/diversity.png" alt="An image representing diversity and inclusion" class="rounded-lg shadow-md w-full">
+                                 <img src="./images/diversity.png" alt="An image representing diversity and inclusion" class="rounded-lg shadow-md w-full">
                             </div>
                         </div>
                     </div>
@@ -740,111 +619,107 @@ body.theme-high-contrast .navigation-controls {
                         </div>
                     </div>
 
-                    <!-- Social vs Medical Model -->
+                    <!-- Accordion: Types of Disabilities -->
                     <div class="bg-white p-6 rounded-xl shadow-lg lesson-card">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                            Social vs. Medical Model of Disability
-                             <button class="tts-button" aria-label="Listen to social vs medical model explanation" data-tts-target="#social-medical-model-content">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
-                            </button>
-                        </h3>
-                        <div class="flex flex-col lg:flex-row gap-8 items-start">
-                            <div id="social-medical-model-content" class="lg:w-2/3 space-y-4 text-left">
-                                <div>
-                                    <h4 class="font-semibold text-lg text-blue-800">Medical Model:</h4>
-                                    <p class="text-gray-700 ml-4">Views disability as a problem within the individual that needs to be fixed or cured. For example, focusing on a person’s impairment as the barrier.</p>
-                                </div>
-                                 <div>
-                                    <h4 class="font-semibold text-lg text-blue-800">Social Model:</h4>
-                                    <p class="text-gray-700 ml-4">Recognizes disability as the result of the interaction between individuals and societal barriers—physical, attitudinal, or systemic. For example, a person who uses a wheelchair experiences disability not because of their mobility but because of barriers in the environment, such as buildings without ramps or elevators.</p>
-                                </div>
-                                 <div>
-                                    <h4 class="font-semibold text-lg text-blue-800">Why the Social Model Matters:</h4>
-                                    <p class="text-gray-700 ml-4">The UNCRPD and modern disability frameworks adopt the social model, which sees disability as arising from the barriers society creates, rather than the individual’s impairment alone. It shifts focus to removing barriers and creating inclusive environments, which is essential for equitable access to financial services.</p>
-                                </div>
-                            </div>
-                            <div class="lg:w-1/3 w-full mt-4 lg:mt-0">
-                                <img src="./resources/Medical Vs Social Model.png" alt="Diagram comparing the social and medical models of disability" class="rounded-lg shadow-md w-full">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Types of Disabilities -->
-                    <div class="bg-white p-6 rounded-xl shadow-lg lesson-card">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Types of Disabilities</h3>
-                        <div class="space-y-4">
-                            <!-- Card 1: Physical Disabilities -->
-                            <div class="p-6 border rounded-lg bg-gray-50">
-                                <h4 class="text-lg font-medium text-gray-800 mb-4">Physical Disabilities</h4>
-                                <div class="flex flex-col sm:flex-row items-center gap-4">
-                                    <div class="sm:w-2/3">
-                                        Challenges related to movement, coordination, or functioning of the body. <br><em>Example: A customer who uses a prosthetic leg or has difficulty holding a pen.</em>
-                                        <button class="tts-button" aria-label="Listen to physical disabilities description" data-tts-text="Physical Disabilities. Challenges related to movement, coordination, or functioning of the body. Example: A customer who uses a prosthetic leg or has difficulty holding a pen.">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
-                                        </button>
-                                    </div>
-                                    <div class="sm:w-1/3">
-                                        <img src="./resources/physical.png" alt="Image for physical disability" class="rounded-md shadow-sm w-full">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Click to Explore Types of Disabilities</h3>
+                        <div id="accordion-container" class="divide-y divide-gray-200 border rounded-lg">
+                            <!-- Accordion Item 1 -->
+                            <div>
+                                <button class="accordion-button w-full flex justify-between items-center p-6 text-left text-lg font-medium text-gray-800 hover:bg-gray-50 focus:outline-none">
+                                    <span>Physical Disabilities</span>
+                                    <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="accordion-content bg-gray-50 text-gray-700">
+                                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                                        <div class="sm:w-2/3">
+                                            Challenges related to movement, coordination, or functioning of the body. <br><em>Example: A customer who uses a prosthetic leg or has difficulty holding a pen.</em>
+                                            <button class="tts-button" data-tts-text="Physical Disabilities. Challenges related to movement, coordination, or functioning of the body. Example: A customer who uses a prosthetic leg or has difficulty holding a pen.">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
+                                            </button>
+                                        </div>
+                                        <div class="sm:w-1/3">
+                                            <img src="./images/physical.png" alt="Image for physical disability" class="rounded-md shadow-sm w-full">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Card 2: Sensory Disabilities -->
-                            <div class="p-6 border rounded-lg bg-gray-50">
-                                <h4 class="text-lg font-medium text-gray-800 mb-4">Sensory Disabilities</h4>
-                                <div class="flex flex-col sm:flex-row items-center gap-4">
-                                    <div class="sm:w-2/3">
-                                        Differences in how a person experiences sensory information, such as vision or hearing. <br><em>Example: A customer who is blind and needs documents read aloud, or a customer who is Deaf and uses Khmer Sign Language.</em>
-                                        <button class="tts-button" aria-label="Listen to sensory disabilities description" data-tts-text="Sensory Disabilities. Differences in how a person experiences sensory information, such as vision or hearing. Example: A customer who is blind and needs documents read aloud, or a customer who is Deaf and uses Khmer Sign Language.">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
-                                        </button>
-                                    </div>
-                                    <div class="sm:w-1/3">
-                                        <img src="./resources/sensory.png" alt="Image for sensory disability" class="rounded-md shadow-sm w-full">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Card 3: Intellectual Disabilities -->
-                            <div class="p-6 border rounded-lg bg-gray-50">
-                                <h4 class="text-lg font-medium text-gray-800 mb-4">Intellectual Disabilities</h4>
-                                <div class="flex flex-col sm:flex-row items-center gap-4">
-                                    <div class="sm:w-2/3">
-                                        Conditions affecting intellectual functioning and adaptive behavior. <br><em>Example: A customer who may need complex financial information explained in simple, clear terms.</em>
-                                        <button class="tts-button" aria-label="Listen to intellectual disabilities description" data-tts-text="Intellectual Disabilities. Conditions affecting intellectual functioning and adaptive behavior. Example: A customer who may need complex financial information explained in simple, clear terms.">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
-                                        </button>
-                                    </div>
-                                    <div class="sm:w-1/3">
-                                        <img src="./resources/intellectual.png" alt="Image for intellectual disability" class="rounded-md shadow-sm w-full">
+                            <!-- Accordion Item 2 -->
+                            <div>
+                                <button class="accordion-button w-full flex justify-between items-center p-6 text-left text-lg font-medium text-gray-800 hover:bg-gray-50 focus:outline-none">
+                                    <span>Sensory Disabilities</span>
+                                    <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="accordion-content bg-gray-50 text-gray-700">
+                                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                                        <div class="sm:w-2/3">
+                                            Differences in how a person experiences sensory information, such as vision or hearing. <br><em>Example: A customer who is blind and needs documents read aloud, or a customer who is Deaf and uses Khmer Sign Language.</em>
+                                            <button class="tts-button" data-tts-text="Sensory Disabilities. Differences in how a person experiences sensory information, such as vision or hearing. Example: A customer who is blind and needs documents read aloud, or a customer who is Deaf and uses Khmer Sign Language.">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
+                                            </button>
+                                        </div>
+                                        <div class="sm:w-1/3">
+                                            <img src="./images/sensory.png" alt="Image for sensory disability" class="rounded-md shadow-sm w-full">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Card 4: Psychosocial Disabilities -->
-                            <div class="p-6 border rounded-lg bg-gray-50">
-                                <h4 class="text-lg font-medium text-gray-800 mb-4">Psychosocial Disabilities</h4>
-                                <div class="flex flex-col sm:flex-row items-center gap-4">
-                                    <div class="sm:w-2/3">
-                                        Mental health conditions that can affect daily functioning. <br><em>Example: A customer with anxiety who may need a quiet space for their appointment.</em>
-                                        <button class="tts-button" aria-label="Listen to psychosocial disabilities description" data-tts-text="Psychosocial Disabilities. Mental health conditions that can affect daily functioning. Example: A customer with anxiety who may need a quiet space for their appointment.">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
-                                        </button>
-                                    </div>
-                                    <div class="sm:w-1/3">
-                                        <img src="./resources/psychosocial.png" alt="Image for psychosocial disability" class="rounded-md shadow-sm w-full">
+                            <!-- Accordion Item 3 -->
+                            <div>
+                                <button class="accordion-button w-full flex justify-between items-center p-6 text-left text-lg font-medium text-gray-800 hover:bg-gray-50 focus:outline-none">
+                                    <span>Intellectual Disabilities</span>
+                                    <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="accordion-content bg-gray-50 text-gray-700">
+                                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                                        <div class="sm:w-2/3">
+                                            Conditions affecting intellectual functioning and adaptive behavior. <br><em>Example: A customer who may need complex financial information explained in simple, clear terms.</em>
+                                            <button class="tts-button" data-tts-text="Intellectual Disabilities. Conditions affecting intellectual functioning and adaptive behavior. Example: A customer who may need complex financial information explained in simple, clear terms.">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
+                                            </button>
+                                        </div>
+                                        <div class="sm:w-1/3">
+                                            <img src="./images/intellectual.png" alt="Image for intellectual disability" class="rounded-md shadow-sm w-full">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Card 5: Invisible Disabilities -->
-                            <div class="p-6 border rounded-lg bg-gray-50">
-                                <h4 class="text-lg font-medium text-gray-800 mb-4">Invisible Disabilities</h4>
-                                <div class="flex flex-col sm:flex-row items-center gap-4">
-                                    <div class="sm:w-2/3">
-                                        Remember, not all disabilities are visible. A person might have chronic pain or a mental health condition that isn't obvious. Always be respectful and avoid assumptions.
-                                        <button class="tts-button" aria-label="Listen to invisible disabilities description" data-tts-text="Invisible Disabilities. Remember, not all disabilities are visible. A person might have chronic pain or a mental health condition that isn't obvious. Always be respectful and avoid assumptions.">
-                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z"></path></svg>
-                                        </button>
+                             <!-- Accordion Item 4 -->
+                            <div>
+                                <button class="accordion-button w-full flex justify-between items-center p-6 text-left text-lg font-medium text-gray-800 hover:bg-gray-50 focus:outline-none">
+                                    <span>Psychosocial Disabilities</span>
+                                    <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="accordion-content bg-gray-50 text-gray-700">
+                                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                                        <div class="sm:w-2/3">
+                                            Mental health conditions that can affect daily functioning. <br><em>Example: A customer with anxiety who may need a quiet space for their appointment.</em>
+                                            <button class="tts-button" data-tts-text="Psychosocial Disabilities. Mental health conditions that can affect daily functioning. Example: A customer with anxiety who may need a quiet space for their appointment.">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
+                                            </button>
+                                        </div>
+                                        <div class="sm:w-1/3">
+                                            <img src="./images/psychosocial.png" alt="Image for psychosocial disability" class="rounded-md shadow-sm w-full">
+                                        </div>
                                     </div>
-                                    <div class="sm:w-1/3">
-                                        <img src="./resources/invisible.jpg" alt="Image for invisible disability" class="rounded-md shadow-sm w-full">
+                                </div>
+                            </div>
+                             <!-- Accordion Item 5 -->
+                            <div>
+                                <button class="accordion-button w-full flex justify-between items-center p-6 text-left text-lg font-medium text-gray-800 hover:bg-gray-50 focus:outline-none">
+                                    <span>Invisible Disabilities</span>
+                                    <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                                <div class="accordion-content bg-gray-50 text-gray-700">
+                                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                                        <div class="sm:w-2/3">
+                                            Remember, not all disabilities are visible. A person might have chronic pain or a mental health condition that isn't obvious. Always be respectful and avoid assumptions.
+                                            <button class="tts-button" data-tts-text="Invisible Disabilities. Remember, not all disabilities are visible. A person might have chronic pain or a mental health condition that isn't obvious. Always be respectful and avoid assumptions.">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
+                                            </button>
+                                        </div>
+                                        <div class="sm:w-1/3">
+                                            <img src="./images/invisible.jpg" alt="Image for invisible disability" class="rounded-md shadow-sm w-full">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -854,7 +729,7 @@ body.theme-high-contrast .navigation-controls {
             </section>
         </div>
 
-        <!-- Screen 3: Barriers & The Importance of Inclusion -->
+        <!-- Screen 4: Barriers & The Importance of Inclusion -->
         <div id="screen-3" class="screen">
             <section id="lesson2" class="mb-12">
                  <div class="flex items-center mb-6">
@@ -888,35 +763,30 @@ body.theme-high-contrast .navigation-controls {
 
                     <!-- Scenario Block -->
                     <div class="bg-white p-6 rounded-xl shadow-lg lesson-card">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-2">
-                            A Customer's Journey: Identifying the Barriers
-                            <button class="tts-button" data-tts-target="#customer-journey-content">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
-                            </button>
-                        </h3>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">A Customer's Journey: Identifying the Barriers</h3>
                         <p class="text-gray-600 mb-4">Let's follow a customer's journey to the bank. Click through the scenes to see what happens.</p>
-                        <div id="customer-journey-content" class="relative h-[550px] overflow-hidden">
+                        <div class="relative h-[550px] overflow-hidden">
                             <!-- Scene 1 -->
                             <div class="scenario-scene active text-center absolute inset-0">
-                                <img src="./resources/scenario1.jpg" alt="Customer in wheelchair at bottom of stairs" class="mx-auto rounded-lg mb-4 shadow-md w-full h-96 object-cover">
+                                <img src="./images/scenario1.jpg" alt="Customer in wheelchair at bottom of stairs" class="mx-auto rounded-lg mb-4 shadow-md w-full h-96 object-cover">
                                 <h4 class="font-bold text-lg mb-2">The Physical Barrier</h4>
                                 <p class="max-w-md mx-auto">A customer arrives but cannot enter the branch because of the stairs. This is a physical barrier that prevents access.</p>
                             </div>
                             <!-- Scene 2 -->
                             <div class="scenario-scene text-center absolute inset-0">
-                                <img src="./resources/scenario2.jpg" alt="Confused bank staff" class="mx-auto rounded-lg mb-4 shadow-md w-full h-96 object-cover">
+                                <img src="./images/scenario2.jpg" alt="Confused bank staff" class="mx-auto rounded-lg mb-4 shadow-md w-full h-96 object-cover">
                                 <h4 class="font-bold text-lg mb-2">The Attitudinal Barrier</h4>
                                 <p class="max-w-md mx-auto">Inside, the staff are unsure how to help and assume the customer cannot manage their own finances. This is an attitudinal barrier based on stigma.</p>
                             </div>
                             <!-- Scene 3 -->
                             <div class="scenario-scene text-center absolute inset-0">
-                                <img src="./resources/scenario3.jpg" alt="Customer frustrated with inaccessible website" class="mx-auto rounded-lg mb-4 shadow-md w-full h-96 object-cover">
+                                <img src="./images/scenario3.jpg" alt="Customer frustrated with inaccessible website" class="mx-auto rounded-lg mb-4 shadow-md w-full h-96 object-cover">
                                 <h4 class="font-bold text-lg mb-2">The Systemic & Digital Barrier</h4>
                                 <p class="max-w-md mx-auto">The staff directs the customer to use an online platform that isn't accessible. This is a systemic failure in the bank's policies and technology.</p>
                             </div>
                              <!-- Scene 4 -->
                             <div class="scenario-scene text-center absolute inset-0">
-                                <img src="./resources/conclusion.jpg" alt="Diagram showing barriers and solutions" class="mx-auto rounded-lg mb-4 shadow-md w-full h-96 object-contain">
+                                <img src="./images/conclusion.jpg" alt="Diagram showing barriers and solutions" class="mx-auto rounded-lg mb-4 shadow-md w-full h-96 object-contain">
                                 <h4 class="font-bold text-lg mb-2">Conclusion</h4>
                                 <p class="max-w-md mx-auto">This customer faced a chain of barriers that led to complete exclusion. Our goal as financial service providers is to identify and break this chain at every step.</p>
                             </div>
@@ -928,13 +798,8 @@ body.theme-high-contrast .navigation-controls {
 
                     <!-- Flashcard Grid -->
                     <div class="bg-white p-6 rounded-xl shadow-lg lesson-card">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                            The Value of Inclusion: Why It's Good for Business
-                            <button class="tts-button" data-tts-target="#value-inclusion-content">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
-                            </button>
-                        </h3>
-                        <div id="value-inclusion-content" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">The Value of Inclusion: Why It's Good for Business</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                             <div class="flashcard-container h-60 cursor-pointer" tabindex="0">
                                 <div class="flashcard relative w-full h-full">
                                     <div class="flashcard-face bg-blue-500 text-white">
@@ -981,7 +846,7 @@ body.theme-high-contrast .navigation-controls {
             </section>
         </div>
 
-        <!-- Screen 4: Best Practices in Action -->
+        <!-- Screen 5: Best Practices in Action -->
         <div id="screen-4" class="screen">
             <section id="lesson3" class="mb-12">
                 <div class="flex items-center mb-6">
@@ -991,267 +856,56 @@ body.theme-high-contrast .navigation-controls {
                 <div class="space-y-8">
                     <!-- Process Block -->
                     <div class="bg-white p-6 rounded-xl shadow-lg lesson-card">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                            Respectful Communication: Do’s and Don’ts with Different Disabilities
-                            <button class="tts-button" data-tts-target="#communication-content">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
-                            </button>
-                        </h3>
-                        <div id="communication-content" class="flex flex-col lg:flex-row gap-8 items-start">
-                            <div class="lg:w-2/3 space-y-4">
-                                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
-                                    <!-- Do's Column -->
-                                    <div class="space-y-4">
-                                        <h4 class="text-lg font-semibold text-green-700">Do's</h4>
-                                        <div class="flex items-start">
-                                            <div class="bg-green-100 text-green-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">✓</div>
-                                            <p>Speak directly to the customer, not their companion or support person.</p>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="bg-green-100 text-green-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">✓</div>
-                                            <p>Use person-centered language, respecting individual preferences.</p>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="bg-green-100 text-green-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">✓</div>
-                                            <p>Be patient, listen actively, and allow extra time if needed.</p>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="bg-green-100 text-green-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">✓</div>
-                                            <p>Ask before offering assistance and respect the customer’s response.</p>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="bg-green-100 text-green-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">✓</div>
-                                            <p>Use clear, simple language and check for understanding.</p>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="bg-green-100 text-green-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">✓</div>
-                                            <p>Provide alternative communication methods (e.g., written notes, interpreters).</p>
-                                        </div>
-                                    </div>
-                                    <!-- Don'ts Column -->
-                                    <div class="space-y-4">
-                                        <h4 class="text-lg font-semibold text-red-700">Don'ts</h4>
-                                        <div class="flex items-start">
-                                            <div class="bg-red-100 text-red-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">✗</div>
-                                            <p>Don’t make assumptions about a person’s abilities or needs.</p>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="bg-red-100 text-red-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">✗</div>
-                                            <p>Avoid patronizing language or “baby talk.”</p>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="bg-red-100 text-red-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">✗</div>
-                                            <p>Don’t interrupt or finish sentences for the customer.</p>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="bg-red-100 text-red-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">✗</div>
-                                            <p>Avoid speaking only to a companion or caregiver.</p>
-                                        </div>
-                                        <div class="flex items-start">
-                                            <div class="bg-red-100 text-red-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">✗</div>
-                                            <p>Don’t touch mobility aids or personal devices without permission.</p>
-                                        </div>
-                                    </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Respectful Communication: Do's and Don'ts</h3>
+                        <div class="flex flex-col md:flex-row gap-6 items-center">
+                            <div class="md:w-2/3 space-y-4">
+                                <div class="flex items-start">
+                                    <div class="bg-green-100 text-green-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">Do</div>
+                                    <p>Speak directly to the customer, not to their companion or interpreter.</p>
+                                </div>
+                                 <div class="flex items-start">
+                                    <div class="bg-red-100 text-red-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">Don't</div>
+                                    <p>Make assumptions about what a person can or cannot do.</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-green-100 text-green-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">Do</div>
+                                    <p>Ask "How can I help?" before taking action. Respect their answer.</p>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-red-100 text-red-800 rounded-full h-8 w-8 flex-shrink-0 flex items-center justify-center font-bold mr-4">Don't</div>
+                                    <p>Touch a person's mobility aid (like a wheelchair or cane) as it is part of their personal space.</p>
                                 </div>
                             </div>
-                            <div class="lg:w-1/3 w-full mt-4 lg:mt-0">
-                                <img src="./resources/communication.jpg" alt="Bank employee communicating respectfully with a customer" class="rounded-lg shadow-md w-full">
+                            <div class="md:w-1/3">
+                                <img src="./images/communication.jpg" alt="Bank employee communicating respectfully with a customer" class="rounded-lg shadow-md">
                             </div>
                         </div>
                     </div>
 
-
-                    <!-- Accessible Environment Flashcards -->
-                    <div class="bg-white p-6 rounded-xl shadow-lg lesson-card">
+                    <!-- Button Stack -->
+                     <div class="bg-white p-6 rounded-xl shadow-lg lesson-card">
                         <h3 class="text-xl font-semibold text-gray-900 mb-4">Creating an Accessible Environment</h3>
-                        <p class="text-gray-600 mb-6">Accessibility is about both the physical and digital environment. Reasonable accommodation means making necessary adjustments to ensure equal access. Click the cards below to see examples.</p>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <!-- Card 1 -->
-                            <div class="flashcard-container h-80 cursor-pointer" tabindex="0">
-                                <div class="flashcard relative w-full h-full">
-                                    <div class="flashcard-face bg-blue-500 text-white">
-                                        <h4 class="text-xl font-bold">Physical Environment Checklist</h4>
-                                    </div>
-                                    <div class="flashcard-back bg-blue-700 text-white text-left p-4">
-                                        <ul class="list-disc list-inside space-y-2">
-                                            <li>Ramps and elevators for step-free access.</li>
-                                            <li>Clear, wide pathways free of clutter.</li>
-                                            <li>Accessible ATMs with audio guidance and tactile keys.</li>
-                                            <li>Good, consistent lighting.</li>
-                                            <li>Lowered counter sections for wheelchair users.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Card 2 -->
-                            <div class="flashcard-container h-80 cursor-pointer" tabindex="0">
-                                <div class="flashcard relative w-full h-full">
-                                    <div class="flashcard-face bg-blue-500 text-white">
-                                        <h4 class="text-xl font-bold">Digital Environment Checklist</h4>
-                                    </div>
-                                    <div class="flashcard-back bg-blue-700 text-white text-left p-4">
-                                        <ul class="list-disc list-inside space-y-2">
-                                            <li>Website compliant with Web Content Accessibility Guidelines (WCAG).</li>
-                                            <li>Mobile apps usable with screen readers.</li>
-                                            <li>Alternative text for all important images.</li>
-                                            <li>High-contrast color schemes.</li>
-                                            <li>Captions for all video content.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Card 3 -->
-                            <div class="flashcard-container h-80 cursor-pointer" tabindex="0">
-                                <div class="flashcard relative w-full h-full">
-                                    <div class="flashcard-face bg-blue-500 text-white">
-                                        <h4 class="text-xl font-bold">Reasonable Accommodation Examples</h4>
-                                    </div>
-                                    <div class="flashcard-back bg-blue-700 text-white text-left p-4">
-                                        <ul class="list-disc list-inside space-y-2">
-                                            <li>Scheduling longer appointment times for those who need it.</li>
-                                            <li>Providing a quiet space for customers with psychosocial disabilities.</li>
-                                            <li>Offering sign language interpreters for important meetings.</li>
-                                            <li>Providing documents in large print, braille, or easy-read formats.</li>
-                                            <li>Allowing alternative identification methods.</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                         <p class="text-gray-600 mb-6">Accessibility is about both the physical and digital environment. Reasonable accommodation means making necessary adjustments to ensure equal access. Click below to see examples.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <button class="modal-button bg-blue-100 text-blue-800 font-semibold py-2 px-4 rounded-full hover:bg-blue-200" data-modal="modal-physical">Physical Environment Checklist</button>
+                            <button class="modal-button bg-blue-100 text-blue-800 font-semibold py-2 px-4 rounded-full hover:bg-blue-200" data-modal="modal-digital">Digital Environment Checklist</button>
+                            <button class="modal-button bg-blue-100 text-blue-800 font-semibold py-2 px-4 rounded-full hover:bg-blue-200" data-modal="modal-accomodation">Reasonable Accommodation Examples</button>
                         </div>
                     </div>
 
                     <!-- Myth vs Fact -->
                     <div class="bg-white p-6 rounded-xl shadow-lg lesson-card">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">
-                            Knowledge Check: Myth vs. Fact
-                            <button class="tts-button" data-tts-target="#myth-fact-content">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
-                            </button>
-                        </h3>
-                        <div id="myth-fact-content">
-                            <p class="text-gray-600 mb-6">Click each card to reveal the fact.</p>
-                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                <!-- Card 1 -->
-                                <div class="flashcard-container h-72 cursor-pointer" tabindex="0">
-                                    <div class="flashcard relative w-full h-full">
-                                        <div class="flashcard-face bg-gray-700 text-white">
-                                            <span class="text-sm font-bold uppercase tracking-widest text-red-400">Myth</span>
-                                            <p class="text-xl font-bold mt-2">Providing accessible services is too costly for financial institutions.</p>
-                                        </div>
-                                        <div class="flashcard-back bg-green-600 text-white">
-                                            <span class="text-sm font-bold uppercase tracking-widest text-green-200">Fact</span>
-                                            <p class="text-base font-medium mt-2">Reasonable accommodations often require minimal investment and lead to greater customer satisfaction, expanded market reach, and innovation.</p>
-                                        </div>
-                                    </div>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Knowledge Check: Myth vs. Fact</h3>
+                        <p class="text-gray-600 mb-6">Click the card to reveal the fact.</p>
+                        <div class="flashcard-container h-64 cursor-pointer" id="myth-fact-card" tabindex="0">
+                            <div class="flashcard relative w-full h-full">
+                                <div class="flashcard-face bg-gray-700 text-white">
+                                    <span class="text-sm font-bold uppercase tracking-widest text-red-400">Myth</span>
+                                    <p class="text-2xl font-bold mt-2">Providing accessible services is too expensive.</p>
                                 </div>
-                                <!-- Card 2 -->
-                                <div class="flashcard-container h-72 cursor-pointer" tabindex="0">
-                                    <div class="flashcard relative w-full h-full">
-                                        <div class="flashcard-face bg-gray-700 text-white">
-                                            <span class="text-sm font-bold uppercase tracking-widest text-red-400">Myth</span>
-                                            <p class="text-xl font-bold mt-2">People with disabilities don’t want to use financial services.</p>
-                                        </div>
-                                        <div class="flashcard-back bg-green-600 text-white">
-                                            <span class="text-sm font-bold uppercase tracking-widest text-green-200">Fact</span>
-                                            <p class="text-base font-medium mt-2">Many people with disabilities want and need financial services but face barriers such as inaccessible branches, digital platforms, or lack of reasonable accommodations.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card 3 -->
-                                <div class="flashcard-container h-72 cursor-pointer" tabindex="0">
-                                    <div class="flashcard relative w-full h-full">
-                                        <div class="flashcard-face bg-gray-700 text-white">
-                                            <span class="text-sm font-bold uppercase tracking-widest text-red-400">Myth</span>
-                                            <p class="text-xl font-bold mt-2">Disability only means physical impairment.</p>
-                                        </div>
-                                        <div class="flashcard-back bg-green-600 text-white">
-                                            <span class="text-sm font-bold uppercase tracking-widest text-green-200">Fact</span>
-                                            <p class="text-base font-medium mt-2">Disability includes a wide range of conditions—physical, sensory, intellectual, and psychosocial—that can affect participation in financial services.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card 4 -->
-                                <div class="flashcard-container h-72 cursor-pointer" tabindex="0">
-                                    <div class="flashcard relative w-full h-full">
-                                        <div class="flashcard-face bg-gray-700 text-white">
-                                            <span class="text-sm font-bold uppercase tracking-widest text-red-400">Myth</span>
-                                            <p class="text-xl font-bold mt-2">All disabilities are visible.</p>
-                                        </div>
-                                        <div class="flashcard-back bg-green-600 text-white">
-                                            <span class="text-sm font-bold uppercase tracking-widest text-green-200">Fact</span>
-                                            <p class="text-base font-medium mt-2">Many disabilities are invisible, so it is important to avoid assumptions and provide respectful, individualized support.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card 5 -->
-                                <div class="flashcard-container h-72 cursor-pointer" tabindex="0">
-                                    <div class="flashcard relative w-full h-full">
-                                        <div class="flashcard-face bg-gray-700 text-white">
-                                            <span class="text-sm font-bold uppercase tracking-widest text-red-400">Myth</span>
-                                            <p class="text-xl font-bold mt-2">People with disabilities prefer cash and avoid digital banking.</p>
-                                        </div>
-                                        <div class="flashcard-back bg-green-600 text-white">
-                                            <span class="text-sm font-bold uppercase tracking-widest text-green-200">Fact</span>
-                                            <p class="text-base font-medium mt-2">Many want to use digital banking but face accessibility barriers in apps, websites, and ATMs.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Audio Player Section -->
-                    <div class="bg-white p-6 rounded-xl shadow-lg lesson-card">
-                        <h3 class="text-xl font-semibold text-gray-900 mb-4">Listen to the Full Course</h3>
-                        <audio controls class="w-full">
-                            <source src="./resources/sound/AudioBook_PWD.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    <!-- Further Reading Section -->
-                    <div class="bg-white rounded-xl shadow-lg lesson-card border">
-                        <button class="accordion-button active w-full flex justify-between items-center p-6 text-left text-xl font-semibold text-gray-900 hover:bg-gray-50 focus:outline-none">
-                            <span>Further Reading (Optional)</span>
-                            <svg class="w-6 h-6 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
-                        <div id="further-reading-content" class="accordion-content active bg-gray-50 text-gray-700">
-                           <div class="text-left space-y-4">
-                                <h4 class="text-lg font-semibold text-gray-800">
-                                    Explanation of Unconscious Bias
-                                    <button class="tts-button" data-tts-target="#further-reading-content">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M19.114 5.636a9 9 0 010 12.728M16.463 8.288a5.25 5.25 0 010 7.424M6.75 8.25l4.72-4.72a.75.75 0 011.28.53v15.88a.75.75 0 01-1.28.53l-4.72-4.72H4.51c-.88 0-1.704-.507-1.938-1.354A9.01 9.01 0 012.25 12c0-.83.112-1.633.322-2.396C2.806 8.756 3.63 8.25 4.51 8.25H6.75z" /></svg>
-                                    </button>
-                                </h4>
-                                <div>
-                                    <h5 class="font-semibold">What is Unconscious Bias?</h5>
-                                    <p class="text-gray-700">Unconscious bias, also called implicit bias, refers to the automatic, subconscious attitudes or stereotypes that affect our understanding, actions, and decisions without our awareness. These biases are shaped by personal experiences, cultural environment, and societal stereotypes.</p>
-                                    <p class="text-xs text-gray-500 mt-1 italic">(Source: Built In 2024, QuillBot 2024, UMass President’s Office)</p>
-                                </div>
-                                <div>
-                                    <h5 class="font-semibold">How It Affects People with Disabilities:</h5>
-                                    <ul class="list-disc list-inside text-gray-700 space-y-1 mt-1">
-                                        <li>Assuming people with disabilities are less capable or need more help than they actually do.</li>
-                                        <li>Making decisions based on stereotypes rather than individual abilities.</li>
-                                        <li>Avoiding engagement to not “call attention” to a person’s disability.</li>
-                                        <li>Offering unrequested assistance, which can be patronizing.</li>
-                                    </ul>
-                                     <p class="text-xs text-gray-500 mt-1 italic">(Source: DO-IT, University of Washington)</p>
-                                </div>
-                                <div>
-                                    <h5 class="font-semibold">Examples of Unconscious Bias:</h5>
-                                    <ul class="list-disc list-inside text-gray-700 space-y-1 mt-1">
-                                        <li>Assuming a person with a disability will take more sick leave.</li>
-                                        <li>Believing a student with a disability cannot complete a task without help.</li>
-                                        <li>Favoring employees who are similar to oneself (affinity bias).</li>
-                                    </ul>
-                                </div>
-                                 <div>
-                                    <h5 class="font-semibold">Reducing Bias:</h5>
-                                    <ul class="list-disc list-inside text-gray-700 space-y-1 mt-1">
-                                        <li>Increase self-awareness through tools like the Implicit Association Test.</li>
-                                        <li>Speak up when witnessing biased behavior.</li>
-                                        <li>Model equitable and inclusive actions.</li>
-                                    </ul>
-                                     <p class="text-xs text-gray-500 mt-1 italic">(Source: DO-IT, Equality Challenge Unit UK)</p>
+                                <div class="flashcard-back bg-green-600 text-white">
+                                    <span class="text-sm font-bold uppercase tracking-widest text-green-200">Fact</span>
+                                    <p class="text-xl font-bold mt-2">Many accommodations are low-cost or free. The long-term benefits of an expanded, loyal customer base far outweigh the initial investment.</p>
                                 </div>
                             </div>
                         </div>
@@ -1260,17 +914,15 @@ body.theme-high-contrast .navigation-controls {
             </section>
         </div>
 
-        <!-- Screen 5: Knowledge Check -->
+        <!-- Screen 6: Knowledge Check -->
         <div id="screen-5" class="screen">
-             <section id="knowledge-check" class="mb-12">
+            <section id="knowledge-check" class="mb-12">
                 <div class="flex items-center mb-6">
-                    <div class="bg-green-500 text-white rounded-full h-12 w-12 flex items-center justify-center text-2xl font-bold">?</div>
+                    <div class="bg-yellow-500 text-white rounded-full h-12 w-12 flex items-center justify-center text-2xl font-bold">?</div>
                     <h2 class="text-3xl font-bold text-gray-900 ml-4">Knowledge Check</h2>
                 </div>
                 <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg lesson-card">
-                     <p class="text-gray-600 mb-6">Let's check your understanding. You will receive feedback on your answers.</p>
                     <form id="quiz-form" class="space-y-8">
-                        <!-- Question 1 -->
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">1. According to the Social Model of Disability, what is the primary cause of disability?</p>
                             <div class="space-y-3">
@@ -1289,7 +941,7 @@ body.theme-high-contrast .navigation-controls {
                             </div>
                             <div class="feedback mt-2" id="feedback-q1"></div>
                         </div>
-                        <!-- Question 2 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">2. True or False: All disabilities are visible.</p>
                             <div class="space-y-3">
@@ -1304,7 +956,7 @@ body.theme-high-contrast .navigation-controls {
                             </div>
                             <div class="feedback mt-2" id="feedback-q2"></div>
                         </div>
-                        <!-- Question 3 -->
+
                         <div class="quiz-question">
                              <p class="font-semibold text-lg mb-4">3. A customer with anxiety asks for a quiet room to discuss a loan. This is an example of:</p>
                              <div class="space-y-3">
@@ -1323,7 +975,7 @@ body.theme-high-contrast .navigation-controls {
                              </div>
                              <div class="feedback mt-2" id="feedback-q3"></div>
                         </div>
-                         <!-- Question 4 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">4. Which of the following is considered a "Do" in respectful communication?</p>
                             <div class="space-y-3">
@@ -1342,143 +994,599 @@ body.theme-high-contrast .navigation-controls {
                              </div>
                              <div class="feedback mt-2" id="feedback-q4"></div>
                         </div>
-                         <!-- Question 5 -->
+
                         <div class="quiz-question">
-                              <p class="font-semibold text-lg mb-4">5. True or False: Making banking services accessible is primarily a charity issue, not a business opportunity.</p>
-                              <div class="space-y-3">
-                                  <label for="q5a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                      <input type="radio" id="q5a" name="q5" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                      <span class="ml-3 text-gray-700">a. True</span>
-                                  </label>
-                                  <label for="q5b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                      <input type="radio" id="q5b" name="q5" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                      <span class="ml-3 text-gray-700">b. False</span>
-                                  </label>
-                              </div>
-                              <div class="feedback mt-2" id="feedback-q5"></div>
+                             <p class="font-semibold text-lg mb-4">5. True or False: Making banking services accessible is primarily a charity issue, not a business opportunity.</p>
+                             <div class="space-y-3">
+                                 <label for="q5a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q5a" name="q5" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">a. True</span>
+                                 </label>
+                                 <label for="q5b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q5b" name="q5" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">b. False</span>
+                                 </label>
+                             </div>
+                             <div class="feedback mt-2" id="feedback-q5"></div>
                         </div>
-                        <!-- Question 6 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">6. An inaccessible website is an example of what kind of barrier?</p>
-                            <div class="space-y-3">
-                                <label for="q6a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                    <input type="radio" id="q6a" name="q6" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                    <span class="ml-3 text-gray-700">a. A digital or systemic barrier.</span>
-                                </label>
-                                <label for="q6b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                    <input type="radio" id="q6b" name="q6" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                    <span class="ml-3 text-gray-700">b. An attitudinal barrier.</span>
-                                </label>
-                                <label for="q6c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                    <input type="radio" id="q6c" name="q6" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                    <span class="ml-3 text-gray-700">c. Only a problem for young people.</span>
-                                </label>
-                            </div>
-                            <div class="feedback mt-2" id="feedback-q6"></div>
+                             <div class="space-y-3">
+                                 <label for="q6a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q6a" name="q6" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">a. A digital or systemic barrier.</span>
+                                 </label>
+                                 <label for="q6b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q6b" name="q6" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">b. An attitudinal barrier.</span>
+                                 </label>
+                                 <label for="q6c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q6c" name="q6" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">c. Only a problem for young people.</span>
+                                 </label>
+                             </div>
+                             <div class="feedback mt-2" id="feedback-q6"></div>
                         </div>
-                        <!-- Question 7 -->
+
                         <div class="quiz-question">
-                            <p class="font-semibold text-lg mb-4">7. "WCAG" refers to guidelines for:</p>
-                            <div class="space-y-3">
-                                <label for="q7a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                    <input type="radio" id="q7a" name="q7" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                    <span class="ml-3 text-gray-700">a. Building physical ramps.</span>
-                                </label>
-                                <label for="q7b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                    <input type="radio" id="q7b" name="q7" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                    <span class="ml-3 text-gray-700">b. Web content accessibility.</span>
-                                </label>
-                                <label for="q7c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                    <input type="radio" id="q7c" name="q7" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                    <span class="ml-3 text-gray-700">c. Staff training programs.</span>
-                                </label>
-                            </div>
-                            <div class="feedback mt-2" id="feedback-q7"></div>
+                             <p class="font-semibold text-lg mb-4">7. "WCAG" refers to guidelines for:</p>
+                             <div class="space-y-3">
+                                 <label for="q7a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q7a" name="q7" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">a. Building physical ramps.</span>
+                                 </label>
+                                 <label for="q7b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q7b" name="q7" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">b. Web content accessibility.</span>
+                                 </label>
+                                 <label for="q7c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q7c" name="q7" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">c. Staff training programs.</span>
+                                 </label>
+                             </div>
+                             <div class="feedback mt-2" id="feedback-q7"></div>
                         </div>
-                        <!-- Question 8 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">8. True or False: When a customer with a disability enters, you should immediately grab their arm to help them.</p>
                             <div class="space-y-3">
-                                <label for="q8a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                    <input type="radio" id="q8a" name="q8" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                    <span class="ml-3 text-gray-700">a. True</span>
-                                </label>
-                                <label for="q8b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                    <input type="radio" id="q8b" name="q8" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                    <span class="ml-3 text-gray-700">b. False</span>
-                                </label>
-                            </div>
-                            <div class="feedback mt-2" id="feedback-q8"></div>
+                                 <label for="q8a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q8a" name="q8" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">a. True</span>
+                                 </label>
+                                 <label for="q8b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q8b" name="q8" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">b. False</span>
+                                 </label>
+                             </div>
+                             <div class="feedback mt-2" id="feedback-q8"></div>
                         </div>
-                        <!-- Question 9 -->
+
                         <div class="quiz-question">
-                            <p class="font-semibold text-lg mb-4">9. Providing a sign language interpreter for a Deaf customer is a form of:</p>
-                            <div class="space-y-3">
-                                <label for="q9a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                    <input type="radio" id="q9a" name="q9" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                    <span class="ml-3 text-gray-700">a. Reasonable Accommodation.</span>
-                                </label>
-                                <label for="q9b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                    <input type="radio" id="q9b" name="q9" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                    <span class="ml-3 text-gray-700">b. A communication barrier.</span>
-                                </label>
-                                <label for="q9c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                    <input type="radio" id="q9c" name="q9" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                    <span class="ml-3 text-gray-700">c. An unnecessary expense.</span>
-                                </label>
-                            </div>
-                            <div class="feedback mt-2" id="feedback-q9"></div>
+                             <p class="font-semibold text-lg mb-4">9. Providing a sign language interpreter for a Deaf customer is a form of:</p>
+                             <div class="space-y-3">
+                                 <label for="q9a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q9a" name="q9" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">a. Reasonable Accommodation.</span>
+                                 </label>
+                                 <label for="q9b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q9b" name="q9" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">b. A communication barrier.</span>
+                                 </label>
+                                 <label for="q9c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q9c" name="q9" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">c. An unnecessary expense.</span>
+                                 </label>
+                             </div>
+                             <div class="feedback mt-2" id="feedback-q9"></div>
                         </div>
-                        <!-- Question 10 -->
+
                         <div class="quiz-question">
                             <p class="font-semibold text-lg mb-4">10. The main goal of disability inclusion in banking is to:</p>
                             <div class="space-y-3">
-                                <label for="q10a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                    <input type="radio" id="q10a" name="q10" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                    <span class="ml-3 text-gray-700">a. Give people with disabilities special advantages.</span>
-                                </label>
-                                <label for="q10b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                    <input type="radio" id="q10b" name="q10" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                    <span class="ml-3 text-gray-700">b. Comply with the minimum legal requirements only.</span>
-                                </label>
-                                <label for="q10c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
-                                    <input type="radio" id="q10c" name="q10" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
-                                    <span class="ml-3 text-gray-700">c. Remove barriers so everyone can participate on an equal basis.</span>
-                                </label>
-                            </div>
-                            <div class="feedback mt-2" id="feedback-q10"></div>
+                                 <label for="q10a" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q10a" name="q10" value="a" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">a. Give people with disabilities special advantages.</span>
+                                 </label>
+                                 <label for="q10b" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q10b" name="q10" value="b" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">b. Comply with the minimum legal requirements only.</span>
+                                 </label>
+                                 <label for="q10c" class="flex items-center border border-gray-300 rounded-lg p-4 cursor-pointer hover:bg-gray-50 has-[:checked]:bg-blue-50 has-[:checked]:border-blue-400">
+                                     <input type="radio" id="q10c" name="q10" value="c" class="h-4 w-4 text-blue-600 border-gray-400 focus:ring-blue-500">
+                                     <span class="ml-3 text-gray-700">c. Remove barriers so everyone can participate on an equal basis.</span>
+                                 </label>
+                             </div>
+                             <div class="feedback mt-2" id="feedback-q10"></div>
                         </div>
+
                         <div class="text-center">
-                            <button type="submit" id="submit-quiz" class="bg-green-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-600 transition-colors">Check My Answers</button>
+                            <button type="submit" id="submit-quiz" class="bg-yellow-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-600 transition-colors">Check My Answers</button>
                         </div>
                     </form>
                     <div id="quiz-results" class="hidden text-center mt-8">
-                        <h3 class="text-2xl font-bold">Knowledge Check Complete!</h3>
-                        <p id="quiz-message" class="mt-4 text-gray-700">Thank you for completing the knowledge check. Please click "Next" to continue.</p>
+                        <h3 class="text-2xl font-bold">Quiz Complete!</h3>
+                        <p class="text-lg mt-2">Your score: <span id="quiz-score" class="font-bold"></span></p>
+                        <p id="quiz-message" class="mt-4 text-gray-700"></p>
+                        <div id="certificate-section" class="hidden mt-6">
+                            <p class="text-green-700 font-semibold">Congratulations! You've earned a certificate.</p>
+                            <button id="download-cert-btn" class="mt-2 bg-green-600 text-white font-bold py-2 px-6 rounded-full hover:bg-green-700 transition-colors">
+                                Download Certificate
+                            </button>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
 
-        <!-- Screen 6: Conclusion -->
+        <!-- Screen 7: Conclusion -->
         <div id="screen-6" class="screen">
             <section id="conclusion" class="text-center bg-white p-8 rounded-xl shadow-lg">
                 <h2 class="text-3xl font-bold text-gray-900">Congratulations!</h2>
-                <p class="text-lg text-gray-700 mt-2 mb-4">You have completed the introduction to Disability Inclusion.</p>
-                <p class="text-lg text-gray-800 mt-4 mb-6 font-semibold">To complete the course successfully and receive your certificate, please return to the main course page to take the final assessment.</p>
-                <p class="text-gray-600">You can now close this window.</p>
+                <p class="text-lg text-gray-700 mt-2 mb-6">You have completed the introduction to Disability Inclusion.</p>
+                <p class="text-gray-600">You can go back to review the lessons or restart the course.</p>
             </section>
         </div>
 
+        <!-- Navigation Controls -->
+        <div id="navigation-container" class="navigation-controls">
+            <button id="prev-btn" class="nav-btn">Previous</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+        </div>
+
     </main>
-        
-    <div id="navigation-container" class="navigation-controls">
-        <button id="prev-btn" class="nav-btn">Previous</button>
-        <button id="next-btn" class="nav-btn">Next</button>
+
+    <!-- Modals -->
+    <div id="modal-physical" class="modal fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-lg shadow-xl p-6 max-w-md w-full modal-content">
+            <h3 class="text-xl font-bold mb-4">Physical Environment Checklist</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Ramps and elevators for step-free access.</li>
+                <li>Clear, wide pathways free of clutter.</li>
+                <li>Accessible ATMs with audio guidance and tactile keys.</li>
+                <li>Good, consistent lighting.</li>
+                <li>Lowered counter sections for wheelchair users.</li>
+            </ul>
+            <button class="modal-close-btn mt-6 bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-full w-full">Close</button>
+        </div>
+    </div>
+    <div id="modal-digital" class="modal fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-lg shadow-xl p-6 max-w-md w-full modal-content">
+            <h3 class="text-xl font-bold mb-4">Digital Environment Checklist</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Website compliant with Web Content Accessibility Guidelines (WCAG).</li>
+                <li>Mobile apps usable with screen readers.</li>
+                <li>Alternative text for all important images.</li>
+                <li>High-contrast color schemes.</li>
+                <li>Captions for all video content.</li>
+            </ul>
+            <button class="modal-close-btn mt-6 bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-full w-full">Close</button>
+        </div>
+    </div>
+    <div id="modal-accomodation" class="modal fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center p-4 z-50">
+        <div class="bg-white rounded-lg shadow-xl p-6 max-w-md w-full modal-content">
+            <h3 class="text-xl font-bold mb-4">Reasonable Accommodation Examples</h3>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+                <li>Scheduling longer appointment times for those who need it.</li>
+                <li>Providing a quiet space for customers with psychosocial disabilities.</li>
+                <li>Offering sign language interpreters for important meetings.</li>
+                <li>Providing documents in large print, braille, or easy-read formats.</li>
+                <li>Allowing alternative identification methods.</li>
+            </ul>
+            <button class="modal-close-btn mt-6 bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded-full w-full">Close</button>
+        </div>
     </div>
 
-    <!-- External JavaScript Files -->
-    <script src="my_custom_logic.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    // --- SCREEN NAVIGATION ---
+    const screens = document.querySelectorAll('.screen');
+    const nextBtn = document.getElementById('next-btn');
+    const prevBtn = document.getElementById('prev-btn');
+    const progressBar = document.getElementById('progressBar');
+    let currentScreen = 0;
+    const totalScreens = screens.length;
+    let preQuizCompleted = false;
+
+    function showScreen(screenIndex) {
+        screens.forEach((screen, index) => {
+            screen.classList.toggle('active', index === screenIndex);
+        });
+        
+        // Update progress bar
+        progressBar.style.width = `${(screenIndex / (totalScreens - 1)) * 100}%`;
+
+        // Update button states
+        prevBtn.disabled = screenIndex === 0;
+        
+        // Disable next button if on pre-quiz and it's not completed
+        if (screenIndex === 1 && !preQuizCompleted) {
+            nextBtn.disabled = true;
+        } else {
+            nextBtn.disabled = screenIndex === totalScreens - 1;
+        }
+
+        // Change "Next" button text on the final quiz screen
+        if (screenIndex === totalScreens - 2) { // Before conclusion
+            nextBtn.textContent = 'Finish Course';
+        } else {
+            nextBtn.textContent = 'Next';
+        }
+
+        window.scrollTo(0, 0);
+    }
+
+    nextBtn.addEventListener('click', () => {
+        if (currentScreen < totalScreens - 1) {
+            currentScreen++;
+            showScreen(currentScreen);
+        }
+    });
+
+    prevBtn.addEventListener('click', () => {
+        if (currentScreen > 0) {
+            currentScreen--;
+            showScreen(currentScreen);
+        }
+    });
+
+    // Initial setup
+    showScreen(0);
+    
+    // TTS Functionality
+    const synth = window.speechSynthesis;
+    let speakingButton = null;
+
+    function speak(text, button) {
+        if (synth.speaking) {
+            if (speakingButton === button) {
+                synth.cancel();
+                return;
+            }
+            synth.cancel();
+        }
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.onstart = () => {
+            if (speakingButton) speakingButton.classList.remove('speaking');
+            speakingButton = button;
+            speakingButton.classList.add('speaking');
+        };
+        utterance.onend = () => {
+            if (speakingButton) speakingButton.classList.remove('speaking');
+            speakingButton = null;
+        };
+        synth.speak(utterance);
+    }
+
+    document.querySelectorAll('.tts-button').forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.stopPropagation();
+            let textToSpeak = button.dataset.ttsText || (button.dataset.ttsTarget ? document.querySelector(button.dataset.ttsTarget).innerText : '');
+            if (textToSpeak) speak(textToSpeak, button);
+        });
+    });
+
+    window.addEventListener('beforeunload', () => {
+        if (synth.speaking) synth.cancel();
+    });
+
+    // Accordion functionality
+    document.querySelectorAll('.accordion-button').forEach(button => {
+        button.addEventListener('click', () => {
+            button.classList.toggle('active');
+            button.nextElementSibling.classList.toggle('active');
+        });
+    });
+
+    // Flashcard functionality
+    document.querySelectorAll('.flashcard-container').forEach(container => {
+        const flipCard = () => {
+            container.querySelector('.flashcard').classList.toggle('is-flipped');
+        };
+        container.addEventListener('click', flipCard);
+        container.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                flipCard();
+            }
+        });
+    });
+
+    // Scenario functionality
+    const scenarioBtn = document.getElementById('scenario-btn');
+    if (scenarioBtn) {
+        const scenarioScenes = document.querySelectorAll('.scenario-scene');
+        let currentScene = 0;
+        scenarioBtn.addEventListener('click', () => {
+            scenarioScenes[currentScene].classList.remove('active');
+            currentScene = (currentScene + 1) % scenarioScenes.length;
+            scenarioScenes[currentScene].classList.add('active');
+            scenarioBtn.textContent = (currentScene === scenarioScenes.length - 1) ? 'Start Over' : 'Next Scene';
+        });
+    }
+
+    // Modal functionality
+    const modals = document.querySelectorAll('.modal');
+    if (modals.length > 0) {
+        const modalButtons = document.querySelectorAll('.modal-button');
+        const closeButtons = document.querySelectorAll('.modal-close-btn');
+
+        function closeModal() {
+            modals.forEach(modal => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            });
+        }
+
+        modalButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const modalId = button.dataset.modal;
+                const modal = document.getElementById(modalId);
+                if (modal) {
+                    modal.classList.remove('hidden');
+                    modal.classList.add('flex');
+                }
+            });
+        });
+
+        closeButtons.forEach(button => button.addEventListener('click', closeModal));
+        modals.forEach(modal => {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) closeModal();
+            });
+        });
+    }
+
+    // Social Model Animation
+    const animateBtn = document.getElementById('animate-btn');
+    if (animateBtn) {
+        const personIcon = document.getElementById('person-icon');
+        const barrierIcon = document.getElementById('barrier-icon');
+        const resultText = document.getElementById('result-text');
+        const inclusionText = document.getElementById('inclusion-text');
+        const removeBarrierBtn = document.getElementById('remove-barrier-btn');
+        const resetAnimationBtn = document.getElementById('reset-animation-btn');
+
+        function resetAnimation() {
+            personIcon.className = 'person-icon';
+            barrierIcon.className = 'barrier-icon';
+            resultText.classList.remove('show');
+            inclusionText.classList.remove('show');
+        }
+
+        animateBtn.addEventListener('click', () => {
+            resetAnimation();
+            setTimeout(() => {
+                personIcon.classList.add('move');
+                resultText.classList.add('show');
+            }, 100);
+        });
+        removeBarrierBtn.addEventListener('click', () => {
+            resetAnimation();
+            setTimeout(() => {
+                barrierIcon.classList.add('removed');
+                personIcon.classList.add('move-past');
+                inclusionText.classList.add('show');
+            }, 100);
+        });
+        resetAnimationBtn.addEventListener('click', resetAnimation);
+    }
+    
+    // --- REUSABLE QUIZ FUNCTIONALITY ---
+    function initializeQuiz(config) {
+        const form = document.getElementById(config.formId);
+        if (!form) return;
+
+        const resultsContainer = document.getElementById(config.resultsId);
+        const scoreEl = document.getElementById(config.scoreId);
+        const messageEl = document.getElementById(config.messageId);
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            let score = 0;
+            const totalQuestions = Object.keys(config.correctAnswers).length;
+
+            for (const questionName in config.correctAnswers) {
+                const selectedOption = form.querySelector(`input[name="${questionName}"]:checked`);
+                const feedbackEl = document.getElementById(config.feedbackPrefix + questionName);
+
+                if (selectedOption) {
+                    if (selectedOption.value === config.correctAnswers[questionName]) {
+                        score++;
+                        if (feedbackEl) {
+                           feedbackEl.textContent = 'Correct!';
+                           feedbackEl.className = 'feedback correct';
+                        }
+                    } else {
+                        if (feedbackEl) {
+                           feedbackEl.textContent = 'Incorrect.';
+                           feedbackEl.className = 'feedback incorrect';
+                        }
+                    }
+                } else {
+                    if (feedbackEl) {
+                       feedbackEl.textContent = 'Please select an answer.';
+                       feedbackEl.className = 'feedback incorrect';
+                    }
+                }
+                 if(feedbackEl) feedbackEl.style.display = 'block';
+            }
+
+            if(scoreEl) scoreEl.textContent = `${score} / ${totalQuestions}`;
+            
+            if (config.certificateConfig && score >= config.certificateConfig.passScore) {
+                if(messageEl) messageEl.textContent = "Excellent work! You have a strong understanding of disability inclusion principles.";
+                const certificateSection = document.getElementById(config.certificateConfig.sectionId);
+                if(certificateSection) certificateSection.style.display = 'block';
+            } else if (score >= totalQuestions / 2) {
+                if(messageEl) messageEl.textContent = "Good job! You have a solid foundation. Review the lessons to strengthen your knowledge.";
+            } else {
+                if(messageEl) messageEl.textContent = "It's a good start. We recommend reviewing the course materials to better understand these important concepts.";
+            }
+
+            if(resultsContainer) {
+                resultsContainer.style.display = 'block';
+                resultsContainer.scrollIntoView({ behavior: 'smooth' });
+            }
+            if(submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.classList.add('bg-gray-400', 'cursor-not-allowed');
+            }
+
+            // Enable next button after pre-quiz is submitted
+            if (config.formId === 'pre-quiz-form') {
+                preQuizCompleted = true;
+                nextBtn.disabled = false;
+            }
+        });
+    }
+
+    const quizAnswers = {
+        'q1': 'b', 'q2': 'b', 'q3': 'b', 'q4': 'c', 'q5': 'b',
+        'q6': 'a', 'q7': 'b', 'q8': 'b', 'q9': 'a', 'q10': 'c'
+    };
+    
+    const preQuizAnswers = {
+        'pre-q1': 'b', 'pre-q2': 'b', 'pre-q3': 'b', 'pre-q4': 'c', 'pre-q5': 'b',
+        'pre-q6': 'a', 'pre-q7': 'b', 'pre-q8': 'b', 'pre-q9': 'a', 'pre-q10': 'c'
+    };
+
+    initializeQuiz({
+        formId: 'pre-quiz-form',
+        resultsId: 'pre-quiz-results',
+        scoreId: 'pre-quiz-score',
+        messageId: 'pre-quiz-message',
+        feedbackPrefix: 'pre-feedback-',
+        correctAnswers: preQuizAnswers
+    });
+
+    initializeQuiz({
+        formId: 'quiz-form',
+        resultsId: 'quiz-results',
+        scoreId: 'quiz-score',
+        messageId: 'quiz-message',
+        feedbackPrefix: 'feedback-',
+        correctAnswers: quizAnswers,
+        certificateConfig: {
+            sectionId: 'certificate-section',
+            passScore: 8 
+        }
+    });
+
+    // Certificate Download
+    const downloadCertBtn = document.getElementById('download-cert-btn');
+    if (downloadCertBtn) {
+       downloadCertBtn.addEventListener('click', function() {
+            const learnerName = "Valued Employee"; 
+            const today = new Date();
+            const dateString = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+            const svgContent = `
+                <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Inter', sans-serif; background-color: #f8fafc;">
+                    <defs>
+                        <style>
+                            .title { font-family: 'Playfair Display', serif; font-size: 48px; fill: #1e3a8a; }
+                            .subtitle { font-size: 20px; fill: #475569; }
+                            .name { font-size: 36px; font-weight: bold; fill: #1e40af; }
+                            .body { font-size: 18px; fill: #334155; }
+                            .date, .signature { font-size: 16px; fill: #475569; }
+                        </style>
+                    </defs>
+                    <rect x="10" y="10" width="780" height="580" fill="none" stroke="#1e3a8a" stroke-width="5" rx="10"/>
+                    <rect x="20" y="20" width="760" height="560" fill="none" stroke="#60a5fa" stroke-width="2" rx="5"/>
+                    <text x="400" y="100" text-anchor="middle" class="title">Certificate of Completion</text>
+                    <text x="400" y="160" text-anchor="middle" class="subtitle">This certificate is proudly presented to</text>
+                    <text x="400" y="240" text-anchor="middle" class="name">${learnerName}</text>
+                    <line x1="200" y1="260" x2="600" y2="260" stroke="#60a5fa" stroke-width="1"/>
+                    <text x="400" y="320" text-anchor="middle" class="body">for successfully completing the course</text>
+                    <text x="400" y="350" text-anchor="middle" class="body" font-weight="bold">Disability Inclusion for Financial Service Providers</text>
+                    <text x="100" y="480" text-anchor="start" class="date">Date: ${dateString}</text>
+                    <line x1="100" y1="510" x2="300" y2="510" stroke="#475569" stroke-width="1"/>
+                    <text x="100" y="530" text-anchor="start" class="signature">Date</text>
+                    <text x="700" y="480" text-anchor="end" class="date">Head of Training</text>
+                    <line x1="500" y1="510" x2="700" y2="510" stroke="#475569" stroke-width="1"/>
+                    <text x="700" y="530" text-anchor="end" class="signature">Signature</text>
+                    <circle cx="400" cy="450" r="50" fill="#dbeafe"/>
+                    <circle cx="400" cy="450" r="45" fill="none" stroke="#1e3a8a" stroke-width="3"/>
+                    <text x="400" y="445" text-anchor="middle" font-size="12px" font-weight="bold" fill="#1e3a8a">FINANCIAL</text>
+                    <text x="400" y="460" text-anchor="middle" font-size="12px" font-weight="bold" fill="#1e3a8a">INCLUSION</text>
+                    <text x="400" y="475" text-anchor="middle" font-size="12px" font-weight="bold" fill="#1e3a8a">2025</text>
+                </svg>`;
+            const dataUrl = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svgContent);
+            const link = document.createElement('a');
+            link.href = dataUrl;
+            link.download = 'Disability_Inclusion_Certificate.svg';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+       });
+    }
+
+    // Theme and Font Size
+    const body = document.body;
+    const themeNormalBtn = document.getElementById('theme-normal');
+    const themeDarkBtn = document.getElementById('theme-dark');
+    const themeHighContrastBtn = document.getElementById('theme-high-contrast');
+    const fontIncreaseBtn = document.getElementById('font-increase');
+    const fontDecreaseBtn = document.getElementById('font-decrease');
+    const themeButtons = [themeNormalBtn, themeDarkBtn, themeHighContrastBtn];
+    
+    function setActiveThemeButton(activeBtn) {
+        themeButtons.forEach(btn => {
+            if(btn) {
+                btn.classList.remove('bg-blue-500', 'text-white');
+                btn.classList.add('border-gray-400');
+            }
+        });
+        if(activeBtn) {
+            activeBtn.classList.add('bg-blue-500', 'text-white');
+            activeBtn.classList.remove('border-gray-400');
+        }
+    }
+
+    if (themeNormalBtn) {
+        themeNormalBtn.addEventListener('click', () => {
+            body.className = 'bg-gray-50 text-gray-800';
+            setActiveThemeButton(themeNormalBtn);
+        });
+    }
+    if (themeDarkBtn) {
+        themeDarkBtn.addEventListener('click', () => {
+            body.className = 'bg-gray-50 text-gray-800 theme-dark';
+            setActiveThemeButton(themeDarkBtn);
+        });
+    }
+    if (themeHighContrastBtn) {
+        themeHighContrastBtn.addEventListener('click', () => {
+            body.className = 'bg-gray-50 text-gray-800 theme-high-contrast';
+            setActiveThemeButton(themeHighContrastBtn);
+        });
+    }
+
+    let currentFontSize = 1; 
+    const maxFontSize = 1.4;
+    const minFontSize = 0.8;
+
+    if (fontIncreaseBtn) {
+        fontIncreaseBtn.addEventListener('click', () => {
+            if (currentFontSize < maxFontSize) {
+                currentFontSize = parseFloat((currentFontSize + 0.1).toFixed(2));
+                document.documentElement.style.setProperty('--font-size', `${currentFontSize}rem`);
+            }
+        });
+    }
+
+    if (fontDecreaseBtn) {
+        fontDecreaseBtn.addEventListener('click', () => {
+            if (currentFontSize > minFontSize) {
+                currentFontSize = parseFloat((currentFontSize - 0.1).toFixed(2));
+                document.documentElement.style.setProperty('--font-size', `${currentFontSize}rem`);
+            }
+        });
+    }
+});
+    </script>
 
 </body>
 </html>
